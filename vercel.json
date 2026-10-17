@@ -1,0 +1,8 @@
+{
+  "name": "haptic-fish",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/dossier", "destination": "/dossier.html" },
+    { "source": "/archive", "destination": "/dossier.html" }
+  ]
+}

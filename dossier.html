@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gründungsdossier &bull; Benjamin Karcher &bull; Tragfähigkeit EFBS e.V.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dark">
+
+  <!-- ========================================================================= -->
+  <!-- AUTHENTICATION GATE (pass1234)                                            -->
+  <!-- ========================================================================= -->
+  <div id="auth-gate-overlay" class="auth-gate-overlay no-print" style="display: none;">
+    <div class="auth-gate-card">
+      <div class="auth-logo-badge">BK</div>
+      <h2>Benjamin Karcher &bull; Dossier</h2>
+      <p class="auth-subtext">Geschützter Dokumentenbereich (EFBS e.V. / Jobcenter Dresden)</p>
+      <form onsubmit="submitAuth(event)">
+        <div class="auth-input-wrapper">
+          <input type="password" id="auth-password-input" class="auth-input" placeholder="Passwort eingeben..." autocomplete="current-password" autofocus required>
+          <button type="submit" class="auth-submit-btn">Entsperren ➔</button>
+        </div>
+        <div id="auth-error-msg" class="auth-error-msg" style="display: none;"></div>
+        <div class="auth-hint">Zugangspasswort: <code>pass1234</code></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="app-layout">
+    
+    <!-- Top Header -->
+    <header class="top-nav no-print">
+      <div class="nav-brand">
+        <div class="brand-avatar">BK</div>
+        <div>
+          <h1>Benjamin Karcher</h1>
+          <span class="subtext">Gründungsdossier &bull; Fachkundige Stellungnahme (EFBS e.V. / Jobcenter Dresden &bull; §§ 16b, 16c SGB II)</span>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <a href="print.html" target="_blank" class="btn-secondary" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">🖨️ Mehrseitige Druckansicht (PDF)</a>
+        <a href="Gruendungsdossier_Benjamin_Karcher_Dresden.pdf" download="Gruendungsdossier_Benjamin_Karcher_Dresden.pdf" class="btn-secondary" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">📥 PDF Direkt-Download</a>
+        <a href="mailto:kontakt@efbsev.de?subject=Antrag%20Fachkundige%20Stellungnahme%20Benjamin%20Karcher%20(SGB%20II)" class="btn-primary">✉️ An EFBS e.V. senden</a>
+      </div>
+    </header>
+
+    <!-- Sub Navigation Tabs -->
+    <nav class="tabs-nav no-print">
+      <button class="tab-btn active" onclick="showTab('tab-summary')">📌 Übersicht &amp; Deckblatt</button>
+      <button class="tab-btn" onclick="showTab('tab-businessplan')">📖 Businessplan</button>
+      <button class="tab-btn" onclick="showTab('tab-finance')">📊 Finanzplan &amp; Anlage EKS</button>
+      <button class="tab-btn" onclick="showTab('tab-qualification')">🎯 Fachliche Eignung</button>
+      <button class="tab-btn" onclick="showTab('tab-cv')">👤 Lebenslauf (DE / EN)</button>
+      <button class="tab-btn" onclick="showTab('tab-form')">🏛️ Formblatt BA GZ 04 (1:1)</button>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="content-container">
+
+      <!-- ========================================================================= -->
+      <!-- TAB 1: ÜBERSICHT & DECKBLATT -->
+      <!-- ========================================================================= -->
+      <section id="tab-summary" class="tab-pane active">
+        <div class="card hero-card">
+          <div class="badge-tag">Einstiegsgeld § 16b SGB II &bull; Investitionszuschuss § 16c SGB II &bull; Vorläufige Anlage EKS</div>
+          <h2 class="hero-title">Studio für Creative Technology, Experiential Hardware &amp; Kinetische Interaktionsartefakte</h2>
+          <p class="hero-desc">
+            Vollständiges Antragsdossier zur Vorlage bei der fachkundigen Stelle <strong>EFBS e.V. (Frau Anna-Maria Döscher, Dresden)</strong> und dem <strong>Jobcenter Dresden</strong> zur nachhaltigen Beendigung der Hilfebedürftigkeit.
+          </p>
+
+          <div class="meta-grid">
+            <div class="meta-box">
+              <span class="label">Gründer</span>
+              <span class="val">Benjamin Karcher</span>
+              <span class="sub">Lewickistraße 41, 01279 Dresden</span>
+            </div>
+            <div class="meta-box">
+              <span class="label">Standort &amp; Rechtsform</span>
+              <span class="val">Dresden, Sachsen</span>
+              <span class="sub">Freiberuflich (§ 18 EStG)</span>
+            </div>
+            <div class="meta-box">
+              <span class="label">Förderung SGB II</span>
+              <span class="val">§§ 16b, 16c SGB II</span>
+              <span class="sub">Einstiegsgeld + 2.500 € Sachmittel</span>
+            </div>
+            <div class="meta-box">
+              <span class="label">Umsatzprognose J1</span>
+              <span class="val">42.000,00 €</span>
+              <span class="sub">EKS-Gewinn 6M: 8.450,00 €</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2col">
+          <div class="card">
+            <h3>✉️ Anschreiben an EFBS e.V. &amp; Jobcenter Dresden</h3>
+            <div class="letter-preview">
+              <p><strong>Benjamin Karcher</strong><br>Lewickistraße 41<br>01279 Dresden<br>E-Mail: benjamin.t.karcher@gmail.com &bull; Web: <a href="https://haptic.fish" target="_blank" style="color: #60a5fa; text-decoration: underline;">haptic.fish</a></p>
+              <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0;">
+              <p><strong>EFBS e.V.</strong> &bull; Frau Anna-Maria Döscher &bull; Könneritzstraße 33, 01067 Dresden<br>
+              <em>zur Vorlage beim:</em> <strong>Jobcenter Dresden</strong>, Budapester Straße 30, 01069 Dresden</p>
+              <p><strong>Betreff:</strong> Antrag auf Erstellung einer fachkundigen Stellungnahme zur Tragfähigkeit der Existenzgründung gemäß §§ 16b, 16c SGB II (Einstiegsgeld &amp; Investitionszuschuss)</p>
+              <p>Sehr geehrte Frau Döscher,</p>
+              <p>anbei reiche ich Ihnen die vollständigen Unterlagen zur fachkundigen Begutachtung meines Gründungsvorhabens zur Vorlage beim Jobcenter Dresden ein:</p>
+              <ul>
+                <li>Ausführlicher Businessplan mit Markt-, Zielgruppen- und Lean-Bootstrap-Strategie</li>
+                <li>Finanzplan inklusive <strong>vorläufiger Anlage EKS (6-Monats-Bewilligungszeitraum)</strong>, 3-Jahres-Rentabilität und Liquiditätsnachweis</li>
+                <li>Detaillierter Antrag auf Gewährung von <strong>Sachmitteln gemäß § 16c SGB II</strong> (2.500 € brutto für additive Fertigung und Messtechnik)</li>
+                <li>Fachliche Eignungsmatrix sowie tabellarischer Lebenslauf</li>
+                <li>Offizielles Begutachtungs-Formblatt (BA GZ 04)</li>
+              </ul>
+              <p>Die Bearbeitungsgebühr von 120,00 Euro zzgl. USt. werde ich nach Rechnungserhalt unverzüglich überweisen.</p>
+              <p>Mit freundlichen Grüßen,<br><strong>Benjamin Karcher</strong></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>📦 Kernprojekte &amp; Portfolio-Artefakte</h3>
+            
+            <div class="project-item">
+              <div class="project-header">
+                <strong>1. The Arena Theory &amp; Globe Tracker Suite (Buinho FabLab Residenz)</strong>
+                <span class="badge-mini">Hardware + CME Residenz</span>
+              </div>
+              <p>Kinetische 3-DoF-Präzisionssphäre und analog-digitales Astrolabium mit optischer Dual-Sensor-Abtastung (PixArt PMW3360 über SPI), Sony IMX708 Barcode-Dekodierung und integriertem Thermodruckwerk. Zweimonatige, durch die EU geförderte FabLab-Residenz (<em>Culture Moves Europe</em>) bei Buinho in Portugal (Nov. 2026) und EMAP-Bewerbung.</p>
+              <div style="display: flex; gap: 10px; margin-top: 8px; flex-wrap: wrap;">
+                <a href="https://thearenatheory.com" target="_blank" class="link-btn">🌐 thearenatheory.com &rarr;</a>
+                <a href="https://globe-tracker-workbench.vercel.app/bom" target="_blank" class="link-btn">🛠️ Live Hardware Workbench &amp; BOM &rarr;</a>
+              </div>
+            </div>
+
+            <div class="project-item">
+              <div class="project-header">
+                <strong>2. NEOPOLIS</strong>
+                <span class="badge-mini">Rauminstallation + Flipper</span>
+              </div>
+              <p>Ein geschmiedetes Artefakt aus einer Parallelgeschichte: Begehbare Rauminstallation rund um einen DDR-Flipperautomaten des fiktiven Herstellers <em>VEB Flipperwerk Zwickau</em>. Physische Interaktionen aktivieren eine integrierte KI-Ebene. Entwickelt in Kooperation mit einer internationalen Keramikerin.</p>
+              <div style="margin-top: 8px;">
+                <a href="https://the-plan-is-a-single-lever.vercel.app" target="_blank" class="link-btn">🌐 the-plan-is-a-single-lever.vercel.app &rarr;</a>
+              </div>
+            </div>
+
+            <div class="project-item">
+              <div class="project-header">
+                <strong>3. Gothica Rising</strong>
+                <span class="badge-mini">Narrative Tech + Novelle</span>
+              </div>
+              <p>Pulp-Glamour-Werwolfwelt der 1920er Jahre mit KI-gestützter digitaler Infrastruktur: Spiel, Schreibmaschine, Traumtagebuch, Story-Bot und publizierte Novelle (Amazon KDP).</p>
+              <div style="margin-top: 8px;">
+                <a href="https://gothicarising.com" target="_blank" class="link-btn">🌐 gothicarising.com &rarr;</a>
+              </div>
+            </div>
+
+            <div class="project-item" style="border-left: 3px solid var(--accent-cyan); background: rgba(56, 189, 248, 0.04);">
+              <div class="project-header">
+                <strong>4. Der mechatronische Diät-Astrolab (1540 // Modern)</strong>
+                <span class="badge-mini" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8;">B2B Museumsexponat &bull; SKD / SLUB</span>
+              </div>
+              <p>Re-Engineering eines 500 Jahre alten Rechenwerks aus dem <em>Astronomicum Caesareum</em> (Peter Apian, 1540, SLUB Dresden): Kugelgelagerte Messing-Volvellen, PixArt-Optikabtastung über SPI, RP2040-Mikrocontroller und Thermodruck personalisierter historischer Diät- und Hofprotokolle (August der Starke / Zeithainer Lustlager). Konzipiert für den <strong>Mathematisch-Physikalischen Salon der SKD Dresden</strong>.</p>
+              <div style="margin-top: 8px;">
+                <span class="badge badge-success" style="font-size: 0.76rem;">🎯 Zielsegment: Säule 2 B2B-Installationen (18.000 € Budgetsegment)</span>
+              </div>
+            </div>
+
+            <div class="project-item" style="border-left: 3px solid #a855f7; background: rgba(168, 85, 247, 0.04);">
+              <div class="project-header">
+                <strong>5. Somatic Memory Orb (F&amp;E-Residenz Buinho / Portugal)</strong>
+                <span class="badge-mini" style="background: rgba(168, 85, 247, 0.2); color: #c084fc;">Säule 1 &bull; Somatic Tech / B2C-Eigenprodukt</span>
+              </div>
+              <p>Autarkes, bildschirmfreies Meditations- und Stressregulations-Device in nahtlos gegossenem Silikonkörper mit kabelloser Qi-Induktionsladung. Eine integrierte analoge Kraft-Weg-Sensorik (FSR / Barometrisch) erfasst Druckstärke und Kompressionsdauer zur dynamischen Berechnung haptischer Biofeedback-Muster (LRA-Aktoren). Ein integriertes EEPROM-Nutzungsgedächtnis (RP2040-Architektur) analysiert die Tagesfrequenz und verlangsamt bei akutem Stress die Vibrationszyklen zur somatischen Beruhigung.</p>
+              <div style="margin-top: 8px;">
+                <span class="badge badge-success" style="font-size: 0.76rem;">🎯 Zielsegment: Säule 1 High-End Sammler- &amp; Wellbeing-Produkte (2.500 € – 3.800 € Kleinserie)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- TAB 2: BUSINESSPLAN -->
+      <!-- ========================================================================= -->
+      <section id="tab-businessplan" class="tab-pane">
+        <div class="card">
+          <div class="section-title-row">
+            <h2>📖 Businessplan (Textteil)</h2>
+            <span class="badge-tag">Lean Bootstrap Modell</span>
+          </div>
+
+          <div class="doc-section">
+            <h3>1. Executive Summary &amp; Marktsegmentierung (Wissenschaftlich-Kommerzielle Definition)</h3>
+            
+            <p style="line-height: 1.6; font-size: 0.95rem; margin-bottom: 14px;">
+              Gegenstand des Unternehmens ist die Etablierung eines spezialisierten Design- und Prototyping-Studios für <strong>Phygital Products (physisch-digitale Hybridsysteme)</strong> am Innovationsstandort Dresden. Das Studio bedient ein rasant wachsendes globales Marktsegment an der Schnittstelle von Tech-Industrie, B2B-Erlebnismarketing und moderner Museumsszenografie. Der weltweite Markt für Phygital Solutions umfasst aktuell ein Volumen von <strong>25,0 Mrd. USD</strong> und expandiert mit einer jährlichen Wachstumsrate von <strong>11,2 % CAGR auf über 52,5 Mrd. USD bis 2030</strong> <a href="#bib-3" class="cite-link" title="Zur Quelle: Virtue Market Research (2024)">[3]</a> (<em>Virtue Market Research, 2024</em>). Das Nischensegment der <em>Phygital Collectibles &amp; Smart Artifacts</em> verzeichnet eine prognostizierte Wachstumsrate von <strong>28,2 % CAGR (2025–2033)</strong> <a href="#bib-4" class="cite-link" title="Zur Quelle: DataIntelo (2025)">[4]</a> (<em>DataIntelo, 2025</em>).
+            </p>
+
+            <div class="note-box" style="background: rgba(59, 130, 246, 0.08); border-left: 4px solid #3b82f6; margin-bottom: 15px;">
+              <strong>🎯 1.1.1 B2B-Problemstellung &amp; Marktlücke: Überwindung der „Touchscreen Fatigue“</strong><br>
+              Moderne B2B-Abnehmer (Museen, Science Center, gewerbliche Flagship-Showrooms) stehen vor einem messbaren Rezeptionsproblem: Die allgegenwärtige Übersättigung durch flache Touchscreens führt zu einem drastischen Rückgang der Interaktionsraten und Verweildauer (<em>Touchscreen Fatigue / Museum Fatigue</em>) <a href="#bib-6" class="cite-link" title="Zur Quelle: MuseumNext (2024)">[6]</a> (<em>MuseumNext, 2024</em>). Das Studio schließt diese Marktlücke durch die Entwicklung und Fertigung von drei proprietären, kommerziell skalierbaren Produktklassen:
+            </div>
+
+            <h4 style="margin-top: 15px; margin-bottom: 8px; color: var(--accent);">🔬 1.1.2 Typologie des „Phygitalen“ Produktspektrums</h4>
+            <ul style="margin-left: 20px; line-height: 1.6; font-size: 0.92rem;">
+              <li><strong>1. Taktile Mensch-Maschine-Schnittstellen (HMIs – B2B-Projektgeschäft):</strong> Maßgeschneiderte mechanische Bedienkonsolen, Wählräder und mechatronische Eingabeelemente (z. B. via PixArt PMW3360 Optical Flow Sensorik), welche die Verweildauer und Interaktion von Museumsbesuchern und Kunden nachweislich um bis zu <strong>94 % gegenüber reinen Touchscreens steigern</strong> <a href="#bib-5" class="cite-link" title="Zur Quelle: Hornecker &amp; Buur (2006)">[5]</a> (<em>Hornecker &amp; Buur, 2006; MDPI HCI, 2024</em>).</li>
+              <li><strong>2. Kinetische Interaktionsartefakte (B2B-Exponate):</strong> Physische Gehäuse- und Apparaturenkonstruktionen (z. B. mechatronische Flipperwerke, Wählräder), bei denen haptische Interaktionen komplexe lokale KI-Prozesse und Software-Dienste (systemd daemons) steuern <a href="#bib-2" class="cite-link" title="Zur Quelle: Fritze et al. (2026)">[2]</a> (<em>Fritze, Lamberton &amp; Puntoni, 2026</em>).</li>
+              <li><strong>3. Transmediale Sammler-Exponate &amp; Autarke Somatik-Devices (High-End B2C &amp; Institutionen):</strong> Hochwertige, haptische Hardware-Objekte für den rasant wachsenden Markt bildschirmfreier Meditations- und Wellbeing-Technologie (z. B. der <em>Somatic Memory Orb</em> mit analoger FSR-Kraftmessung, EEPROM-Nutzungsgedächtnis und Qi-Induktionsladung) sowie transmediale Sammlerbauten im Preiskorridor von <strong>2.500 € bis 8.500 €</strong> pro Einheit <a href="#bib-4" class="cite-link" title="Zur Quelle: DataIntelo (2025)">[4]</a>.</li>
+            </ul>
+
+            <h4 style="margin-top: 15px; margin-bottom: 8px; color: var(--accent);">📊 1.1.3 Ökonomische Zahlungsbereitschaft &amp; Vermeidung der „Digital Devaluation Penalty“</h4>
+            <p style="font-size: 0.92rem; line-height: 1.6; margin-bottom: 12px;">
+              Reine Digitalmedien und Bildschirm-Apps leiden unter einer empirisch nachgewiesenen Abwertung der Zahlungsbereitschaft von <strong>11,3 % bis 22,4 %</strong> (<em>Digital Devaluation Penalty</em>), da ihnen haptische Greifbarkeit und psychologisches Eigentumsgefühl fehlen <a href="#bib-1" class="cite-link" title="Zur Quelle: Orazi &amp; Nyilasy (2026)">[1]</a> (<em>Orazi &amp; Nyilasy, 2026, Journal of Retailing</em>). Durch das <strong>Physical-First-Prinzip</strong> des Studios (physischer Objektkörper mit integrierter digitaler Logik) wird diese Abwertung vollständig eliminiert und eine hohe Preisdurchsetzungskraft bei B2B-Kunden und institutionellen Sammlern erzielt.
+            </p>
+
+            <h4 style="margin-top: 15px; margin-bottom: 8px; color: var(--accent);">🌐 1.1.4 Marktvolumen, Kontext &amp; Internationale Referenzstudios</h4>
+            <p style="font-size: 0.92rem; line-height: 1.6;">
+              Die wirtschaftliche Skalierbarkeit dieses Geschäftsmodells ist international durch etablierte Benchmark-Studios vollständig validiert:
+            </p>
+            <ul style="margin-left: 20px; line-height: 1.6; font-size: 0.92rem;">
+              <li><strong>Wētā Workshop (Neuseeland):</strong> Skaliert erfolgreich von physischen Spezialeffekten und fiktionalem World-Building in den Bereich museumstauglicher Großexponate.</li>
+              <li><strong>ART+COM (Berlin):</strong> Pionier für computergestützte kinetische Skulpturen und räumliche Interaktionsschnittstellen im B2B- und Museums-Sektor.</li>
+              <li><strong>Moment Factory (Kanada):</strong> Belegt die hohe Profitabilität der Verschmelzung von physischer Hardware mit immersiven digitalen Narrativen.</li>
+            </ul>
+
+            <h4 style="margin-top: 15px; margin-bottom: 8px; color: var(--accent);">📍 1.1.5 Regionale Differenzierungsstrategie, FabLab-Einbindung &amp; Vertraulichkeit (NDAs)</h4>
+            <p style="font-size: 0.92rem; line-height: 1.6; margin-bottom: 12px;">
+              Das Studio operiert vom sächsischen Innovationsstandort Dresden aus. Die Initialisierungsphase (Monate 1–6) basiert auf einer hocheffizienten, schlanken Infrastrukturnutzung: Das operative Home-Studio (Lewickistraße 41) dient als primäre Betriebsstätte für administrative Prozesse, Software-Entwicklung und kaufmännische Koordination. Zur ergänzenden R&amp;D-Validierung und Prototypen-Verifikation wird die Infrastruktur des <strong>TUD FabLab (TU Dresden)</strong> im Rahmen der öffentlich zugänglichen Nutzungsordnung flankierend eingebunden. Da Kunden im B2B- und Ausstellungsbereich jedoch strikte Geheimhaltungsvereinbarungen (Non-Disclosure Agreements, NDAs) und engste mechanische Fertigungstoleranzen verlangen, wird über <strong>§ 16c SGB II</strong> eine autarke, betriebseigene Labor- und Prüfinfrastruktur (FDM-3D-Druck, 4-Kanal-Oszilloskop, Labornetzteil) aufgebaut. Dies sichert die vollständige geschäftliche Autarkie ab Monat 1.
+            </p>
+
+            <h4 style="margin-top: 15px; margin-bottom: 8px; color: var(--accent);">🌍 1.1.6 Internationale Validierung, EU-Förderung &amp; Notwendigkeit der Selbstständigkeit (§ 16b SGB II)</h4>
+            <p style="font-size: 0.92rem; line-height: 1.6;">
+              <strong>Kein regionaler Anstellungsmarkt:</strong> Das spezifische Fachprofil an der Schnittstelle von mechatronischem Objektdesign, Embedded Firmware (RP2040/RP2350 Pico, PixArt Optical Tracking) und kinetischer Museumsszenografie existiert im regionalen sächsischen Arbeitsmarkt nicht als abhängiges Beschäftigungsverhältnis. Die gezielte Aufnahme der freiberuflichen Selbstständigkeit ist daher der einzige wirksame und nachhaltige Hebel, um die Hilfebedürftigkeit nach SGB II dauerhaft zu beenden.<br>
+              <strong>Europäische Marktbewährung:</strong> Das Studio verfügt bereits vor Start über eine unabhängige Bestätigung: Der Gründer wurde mit einem renommierten EU-Stipendium (<strong>Culture Moves Europe</strong>) für eine zweimonatige Residenz im <em>Buinho FabLab (Portugal, Nov. 2026)</em> ausgezeichnet. Über das europäische Medienkunst-Netzwerk <strong>EMAP</strong>, das <strong>WRO Art Center (Wrocław, Polen)</strong> sowie konkrete Pitch-Vorbereitungen mit dem <strong>ZKM Karlsruhe</strong> und den <strong>Staatlichen Kunstsammlungen Dresden (SKD)</strong> besteht ein lückenloser, erstklassiger Marktzugang.
+            </p>
+
+            <!-- 1.1.7 Konkretes B2B Projekt-Exposé -->
+            <div class="note-box" style="margin-top: 20px; background: rgba(14, 165, 233, 0.08); border-left: 4px solid var(--accent-cyan); border-radius: 0 10px 10px 0; padding: 16px;">
+              <h4 style="margin-top: 0; margin-bottom: 8px; color: var(--accent-cyan); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                <span>🏛️ 1.1.7 Konkretes B2B-Projekt-Exposé im Akquise-Vorlauf (Museumsmarkt Dresden / SKD)</span>
+                <span class="badge badge-success" style="font-size: 0.75rem;">Säule 2: 18.000 € Budgetsegment</span>
+              </h4>
+              <p style="font-size: 0.92rem; line-height: 1.6; margin-bottom: 10px;">
+                <strong>Projekttitel:</strong> <em>„Der mechatronische Diät-Astrolab (1540 // Modern)“</em><br>
+                <strong>Ziel-Institutionen &amp; Ausstellungskontext:</strong> <strong>Staatliche Kunstsammlungen Dresden (SKD – Mathematisch-Physikalischer Salon im Zwinger)</strong>, <strong>Schloßland Sachsen</strong> sowie historische Sammlungen der <strong>SLUB Dresden</strong>.
+              </p>
+              <div style="font-size: 0.88rem; line-height: 1.55; color: var(--text-primary); display: grid; gap: 8px;">
+                <div>
+                  <strong>Archivalische Entdeckung &amp; Anknüpfung:</strong> Das Vorhaben überführt eine wissenschaftliche Entdeckung aus der universitären Regionalforschung (SLUB Dresden) in ein hochprofitables, interaktives Besucherexponat. Als historische Vorlage dient ein 500 Jahre altes Meisterwerk der Papierberechnung – das <em>Astronomicum Caesareum</em> (Peter Apian, 1540). Dessen mehrschichtige, drehbare Papierscheiben (historisch als <em>Volvellen</em> bezeichnet) dienten Renaissance-Ärzten und Hofastrologen zur mechanischen Berechnung von Humoral-Diagnosen, Aderlass-Zeitpunkten und individuellen astro-medizinischen Diäten.
+                </div>
+                <div>
+                  <strong>Lösung für die Museumspraxis („Accessible Mechanical Proxy“):</strong> Die Original-Messing- und Papierastrolabien des Mathematisch-Physikalischen Salons liegen unberührbar hinter Glas. Besucher können deren geniale analoge Rechenlogik nicht physisch begreifen. Das Studio löst diese Didaktiklücke und die grassierende Touchscreen-Müdigkeit durch ein robustes, berührbares mechatronisches Terminal:
+                </div>
+                <ul style="margin-left: 20px; font-size: 0.86rem; color: var(--text-secondary);">
+                  <li><strong>Tangibles HMI (Haptische Eingabe):</strong> Ein massives Pult mit konzentrischen, kugelgelagerten Messing-Ringen, graviert mit Kalenderdaten und Tierkreiszeichen nach dem 1540er Original. Der Besucher dreht am schweren Metallrad, um sein Geburtsdatum einzustellen.</li>
+                  <li><strong>Verdeckte Embedded-Sensorik:</strong> Ein industrieller optischer High-Speed-Sensor (PixArt Optical Flow via SPI) liest die Rotationsvektoren mikrometergenau aus und leitet die Koordinaten an einen RP2040-Mikrocontroller weiter.</li>
+                  <li><strong>Provokant-humorvolle Hof-Software:</strong> Ein lokaler Berechnungsalgorithmus verknüpft das eingestellte Datum mit der exzessiven Lebensstil- und Konsummatrix des sächsischen Kurfürsten August der Starke (u. a. Zeithainer Lustlager von 1730): <em>„Wenn Sie am heutigen Tag wie August der Starke gefeiert hätten – was verordnet Ihnen der Hofarzt zur Rettung?“</em></li>
+                  <li><strong>Signatur-Ausgabe (Thermodruck):</strong> Ein integriertes Industrie-Thermodruckwerk druckt nach Auswertung sofort ein personalisiertes, historisierendes <em>„Hof-Diät- &amp; Skandalprotokoll“</em> auf Endlospapier zum Mitnehmen aus (hoher viraler und edukativer Erinnerungswert).</li>
+                </ul>
+                <div style="background: rgba(255, 255, 255, 0.04); padding: 10px; border-radius: 6px; margin-top: 4px;">
+                  <strong>Wirtschaftliche Tragfähigkeit für das Jobcenter:</strong> Dieses Projekt illustriert exemplarisch die kommerziellen Erlösmodelle der <strong>Säule 2</strong>:
+                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 6px; font-size: 0.82rem;">
+                    <div>• <strong>Festinstallation:</strong> 12.000 € – 35.000 € (Dauerausstellung)</div>
+                    <div>• <strong>Konzept- &amp; Vorstudie:</strong> 3.000 € – 5.000 € (CAD/Firmware)</div>
+                    <div>• <strong>Sonderausstellungs-Miete:</strong> 2.500 € – 7.500 € (Touring)</div>
+                  </div>
+                  <p style="margin-top: 6px; margin-bottom: 0; font-size: 0.84rem; color: var(--accent-emerald);">
+                    <em>Bereits ein einziger realisierter Projektabschluss in diesem Segment generiert einen Rohertrag, der die gesamten Jahresbetriebskosten des Studios deckt und die Hilfebedürftigkeit nach SGB II sofort beendet.</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="doc-section">
+            <h3>2. Standortanalyse &amp; Zweistufiges Betriebsstättenmodell (Dresden)</h3>
+            <p>
+              Der operative Hauptsitz des Studios befindet sich in <strong>Dresden</strong> (Lewickistraße 41, 01279 Dresden). Der Standort bietet eine strategisch ideale Symbiose aus technologischer Spitzenforschung, einem international renommierten Kulturökosystem und maximaler unternehmerischer Kostendisziplin:
+            </p>
+            <div class="grid-3col">
+              <div class="feature-box">
+                <h4>🏛️ Technologie- &amp; Forschungs-Hub</h4>
+                <p>Direkte Anbindung an das Spitzenforschungsnetzwerk der <strong>Technischen Universität Dresden (TUD)</strong>, das <em>Barkhausen Institut</em> für vernetzte Robotik, das <strong>TUD FabLab</strong> und den <strong>SLUB Makerspace</strong> (Zugang zu Hochleistungs-3D-Druck, Lasercutting und Präzisionsmesstechnik).</p>
+              </div>
+              <div class="feature-box">
+                <h4>🎭 Kultur- &amp; Medienkunstszene</h4>
+                <p>Unmittelbare Nähe zu internationalen Kultur- und Ausstellungshäusern wie <strong>HELLERAU – Europäisches Zentrum der Künste</strong>, <em>Staatliche Kunstsammlungen Dresden (SKD)</em>, <em>Deutsches Hygiene-Museum</em> und den <em>Technischen Sammlungen Dresden</em>.</p>
+              </div>
+              <div class="feature-box">
+                <h4>🏢 2-Stufen-Atelierplan</h4>
+                <p><strong>Phase 1 (M1–M6):</strong> 0 € Mietoverhead via Lean Home-Studio + FabLab.<br><strong>Phase 2 (ab M7 / J2):</strong> Umsatzgetriggertes Teilzeit-Atelier / Werkstattplatz (z. B. im <em>Zentralwerk Dresden</em> oder <em>Kraftwerk Mitte</em>, ca. 250 €–350 €/Mo.) zur Endmontage größerer Exponate und Kunden-Pitches.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="doc-section">
+            <h3>3. Unternehmensorganisation, Urheberrecht &amp; Lizenzvergütung (§ 18 EStG)</h3>
+            <p>
+              <strong>Rechtsform &amp; Freiberufler-Status:</strong> Freiberufliche künstlerisch-technische Tätigkeit als <em>Objektdesigner / Schnittstelle Analog // Digital</em> gemäß § 18 EStG (keine Gewerbesteuerpflicht, keine IHK-Zwangsabgaben).
+            </p>
+            <ul>
+              <li><strong>Zweistufige Honorar- &amp; Lizenzstruktur:</strong>
+                <ol style="margin-left: 20px; margin-top: 6px;">
+                  <li><em>Werklohn (Entwicklung &amp; Prototyping):</em> Honorierung der ingenieurtechnischen Konstruktion, CAD-Modellierung, Sensor-Firmware und Assemblierung (Stundensatz 95 € – 135 €).</li>
+                  <li><em>Urheberrechtliche Nutzungsrechte / Lizenzvergütung:</em> Übertragung zeitlicher und räumlicher Ausstellungs- und Nutzungsrechte für B2B-Installationen und Markenexponate in Anlehnung an den <em>Vergütungstarifvertrag Design (AGD)</em>. Dies generiert margenstarke, materialfreie Erlöse.</li>
+                </ol>
+              </li>
+              <li><strong>Entwicklungs- &amp; Prototyping-Pipeline:</strong> Parametrisches CAD (OpenSCAD, Fusion 360), Embedded SPI-Abtastung (PixArt PMW3360), Daemons auf Embedded Linux, Oberflächenveredelung und schlüsselfertige Übergabe.</li>
+              <li><strong>Administrative Organisation:</strong> Vollständig digitalisierte Belegführung mit Cloud-Buchhaltung (DATEV-Export) und quartalsweiser Einnahmen-Überschuss-Rechnung (EÜR).</li>
+            </ul>
+          </div>
+
+          <div class="doc-section">
+            <h3>4. Das zweistufige Produktions- und Finanzierungsmodell (Risikofreie Skalierung)</h3>
+            <p style="margin-bottom: 15px; line-height: 1.6; font-size: 0.95rem; color: var(--text-main); background: rgba(255,255,255,0.03); padding: 14px; border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;">
+              <strong>Strategische Risikominimierung &amp; Atelier-Skalierung:</strong> Die Betriebsstätte wird in der initialen Gründungsphase kostenneutral im Lean-Home-Studio (Lewickistraße 41, 01279 Dresden) geführt, flankiert durch die kostenfreie Maschinennutzung im TUD FabLab. Sobald im 2. Halbjahr Projektanzahlungen für größere B2B-Exponate fließen, wird flexibel ein repräsentatives Teilzeit-Atelier (z. B. im Zentralwerk Dresden) hinzugemietet. Dies sichert maximale Liquidität in der Startphase bei planvoller physischer Expansion.
+            </p>
+            <p style="margin-bottom: 12px; font-size: 0.92rem; color: var(--text-muted);">
+              Das Studio trennt die Wertschöpfungskette strikt in zwei Phasen, um finanzielle Vorleistungen und das wirtschaftliche Risiko vollständig zu eliminieren:
+            </p>
+            <div class="grid-2col">
+              <div class="feature-box" style="border-left: 3px solid #3b82f6;">
+                <h4>🔬 Phase 1: Kostenneutrales Prototyping (F&amp;E-Phase)</h4>
+                <p>Die Konzeption, digitale CAD-Modellierung, Softwareentwicklung und funktionale Validierung erfolgen über die am Standort vorhandene IT-Infrastruktur. Die additive Fertigung funktionaler Prototypen erfolgt kostenfrei über den Makerspace des <strong>TUD FabLab (TU Dresden)</strong>. In dieser Phase entstehen für das Studio <strong>0,00 Euro Materialkosten</strong>.</p>
+              </div>
+              <div class="feature-box" style="border-left: 3px solid var(--success);">
+                <h4>🛠️ Phase 2: Projektfinanzierte finale Installation (Produktionsphase)</h4>
+                <p>Der Übergang vom Kunststoff-Funktionsprototypen zum finalen Exponat erfordert projektspezifische Materialien (z. B. Harthölzer, Echtmetall-Beschichtungen mittels <strong>Galvano- bzw. Cold-Casting-Verfahren</strong>, spezialisierte Trägerplatinen und Sensorbauteile). Sämtliche Materialkosten (Bill of Materials – BOM) werden zu <strong>100 % durch die vertragliche 50 %-Anzahlung des Kunden</strong> bei Auftragserteilung gedeckt.</p>
+              </div>
+            </div>
+            <div class="note-box" style="margin-top: 12px;">
+              <strong>💡 Fazit:</strong> Das Studio fungiert in der Produktion als koordinierende Schnittstelle; finanzielle Vorfinanzierungsrisiken durch Materialeinkäufe sind zu jedem Zeitpunkt ausgeschlossen.
+            </div>
+          </div>
+
+          <div class="doc-section">
+            <h3>5. Empirische Analyse der Leistungs- &amp; Einnahmensäulen (Revenue Architecture)</h3>
+            <p style="margin-bottom: 12px; line-height: 1.55;">
+              Die Umsatzgenerierung des Studios basiert auf einer dreigeteilten, komplementären Produkt- und Dienstleistungsmatrix. Diese Struktur minimiert zyklische Marktschwankungen, indem sie den volatileren B2B-Projektmarkt mit stetigen Consulting-Flüssen und dem internationalen Sammlermarkt (B2C) diversifiziert.
+            </p>
+            
+            <h4 style="margin-top: 15px; margin-bottom: 8px; color: var(--accent);">🏛️ 1.3.1 Matrix der Einnahmenströme</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Säule</th>
+                  <th>Zielgruppe</th>
+                  <th>Leistungsumfang</th>
+                  <th>Preiskorridor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Säule 1: Unikate &amp; Sammlerobjekte (High-End B2C / Institutionen)</strong></td>
+                  <td>Private Kunstsammler, Musikproduzenten, akademische &amp; kulturelle Institutionen</td>
+                  <td>Handgefertigte Raum-Zeit-Konsolen, mechatronische Astrolabien und autonome Orakel-Stationen, die komplexe fiktionale Universen physisch erlebbar machen (z. B. proprietäre Thermodruckwerke und Sensorsteuerungen).</td>
+                  <td><strong>2.500 € bis 8.500 €</strong> pro Einheit (nach Komplexität)</td>
+                </tr>
+                <tr>
+                  <td><strong>Säule 2: Interaktive B2B-Rauminstallationen (Projektgeschäft)</strong></td>
+                  <td>Staatliche und private Museen, Science Center, Luxus-Flagshipstores, kommerzielle Showrooms</td>
+                  <td>Konzeption, Konstruktion und finale Inbetriebnahme ortsgebundener interaktiver Kiosksysteme, taktiler Besucherstationen, mechanischer Wählräder und kinetischer Exponate (inkl. Computer Vision via Sony IMX708).</td>
+                  <td><strong>12.000 € bis 35.000 €</strong> pro Projekt (Meilenstein-Kalkulation)</td>
+                </tr>
+                <tr>
+                  <td><strong>Säule 3: R&amp;D- und Prototyping-Consulting (B2B-Dienstleistung)</strong></td>
+                  <td>Designagenturen, Innovationsabteilungen etablierter Unternehmen, Deep-Tech-Startups</td>
+                  <td>Agiles Rapid Hardware-Prototyping, Sensor- &amp; Firmware-Entwicklungssprints (RP2040/RP2350 Pico), Signal-Entprellung und Linux-Systemintegration sowie mechatronische Machbarkeitsstudien.</td>
+                  <td><strong>95 € bis 135 € / Std.</strong> (marktübliche Ingenieurssätze)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div style="margin-top: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 16px;">
+              <h4 style="margin-top: 0; margin-bottom: 8px; color: var(--success);">📐 1.3.2 Mathematische Herleitung der Projekt-Margen &amp; Materialkoeffizienten</h4>
+              <p style="font-size: 0.92rem; line-height: 1.55; margin-bottom: 10px;">
+                Um der fachkundigen Stelle die wirtschaftliche Tragfähigkeit mathematisch zu belegen, wird der Materialkoeffizient (<em>&kappa;</em>) der Produktion definiert durch:
+              </p>
+              <div style="background: rgba(0,0,0,0.3); border-radius: 6px; padding: 12px; font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; text-align: center; color: var(--accent); margin-bottom: 12px;">
+                &kappa; = Materialaufwand (BOM) / Bruttoumsatzerlös = 5.200,00 € / 42.000,00 € &asymp; 0,1238 (12,38 %)
+              </div>
+              <p style="font-size: 0.9rem; line-height: 1.55; color: var(--text-muted); margin-bottom: 8px;">
+                Dieser extrem niedrige Koeffizient führt zu einer <strong>Rohertragsmarge von ca. 88 %</strong> und ist empirisch durch zwei strukturelle Faktoren validiert:
+              </p>
+              <ol style="font-size: 0.88rem; color: var(--text-muted); margin-left: 20px; line-height: 1.5;">
+                <li><strong>Infrastruktur-Hebel (TUD FabLab):</strong> Da die Maschinenlaufzeiten für CNC-Fräsen, Lasercutting und industriellen 3D-Druck durch die kostenfreie Nutzung des TUD FabLab der TU Dresden mit 0,00 € angesetzt werden, entfällt der sonst übliche Abschreibungs- und Mietanteil für Maschinenparks vollständig.</li>
+                <li><strong>Wertschöpfung durch Firmware &amp; IP:</strong> Der wirtschaftliche Wert der Produkte resultiert primär aus der hochspezialisierten Programmierung der systemd daemons und der Konzeption der fiktionalen Systeme, nicht aus dem reinen Materialwert.</li>
+              </ol>
+            </div>
+
+            <div style="margin-top: 14px; background: rgba(59, 130, 246, 0.08); border-left: 4px solid #3b82f6; border-radius: 0 8px 8px 0; padding: 14px;">
+              <h4 style="margin-top: 0; margin-bottom: 6px; color: #60a5fa;">🛡️ 1.3.3 Risikominimierung durch das 50%-Anzahlungs-Paradigma</h4>
+              <p style="font-size: 0.9rem; line-height: 1.55; margin-bottom: 0;">
+                Das größte Liquiditätsrisiko im Hardware-Sektor—die finanzielle Vorleistung für Elektronikbauteile, Hölzer und Metallplatten—wird durch ein striktes Anzahlungsmodell neutralisiert. Jeder B2B-Projektvertrag beinhaltet eine verpflichtende Anzahlungsklausel von 50 % bei Auftragserteilung. Da der Materialkoeffizient (<em>&kappa;</em>) nachweislich unter 13 % liegt, deckt die erste Kundenanzahlung die gesamte Bill of Materials (BOM) des Projekts um <strong>mehr als das Dreifache</strong> ab. Ein finanzielles Vorleistungs- oder Ausfallrisiko für das Studio ist somit mathematisch ausgeschlossen.
+              </p>
+            </div>
+          </div>
+
+          <div class="doc-section">
+            <h3>6. Detaillierte Wettbewerbsanalyse &amp; Alleinstellungsmerkmal (USP)</h3>
+            <p>
+              Der Markt für Medienkunst und interaktive Exponate teilt sich überwiegend in zwei Extreme: Einerseits reine Software-/Screen-Künstler ohne Haptik, andererseits industrielle Messe- und Exponatbauer mit sechsstelligen Projektbudgets. Das Studio schließt genau die Lücke dazwischen:
+            </p>
+            <table class="data-table compact">
+              <thead>
+                <tr>
+                  <th>Wettbewerbssegment</th>
+                  <th>Bekannte Vertreter</th>
+                  <th>Grenzen / Schwachstellen</th>
+                  <th>Vorteil / USP von Benjamin Karcher</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Internationale Großstudios</strong></td>
+                  <td>Art+Com (Berlin), Random International (UK), teamLab</td>
+                  <td>Extrem hohe Projektbudgets (&gt;100.000 €), hoher Overhead, lange Vorlaufzeiten</td>
+                  <td><strong>Agil &amp; Bezahlbar:</strong> Maßgeschneiderte kinetische Artefakte im Budgetbereich von 5.000 € bis 35.000 €.</td>
+                </tr>
+                <tr>
+                  <td><strong>Reine Digital- &amp; Generative Artists</strong></td>
+                  <td>Freie Coder, Touchscreen-Entwickler, Web3-Künstler</td>
+                  <td>Keine physische Haptik; reine Bildschirmmedien leiden unter Besuchermüdigkeit (Digital Devaluation)</td>
+                  <td><strong>Physical-First Phygital Products:</strong> Echte physikalische Kinematik (3-DoF-Sphären, Drehregler, Thermodruck).</td>
+                </tr>
+                <tr>
+                  <td><strong>Klassischer Modell- &amp; Kulissenbau</strong></td>
+                  <td>Traditionelle Messe- und Schreinereiwerkstätten</td>
+                  <td>Kein systemnahes Elektronik-, Firmware- oder KI-Know-how</td>
+                  <td><strong>End-to-End-Integration:</strong> Mechanik, Sensorik, Firmware und generative Software aus einer einzigen Hand.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="note-box" style="margin-top: 15px; border-left: 4px solid var(--primary); background: rgba(59, 130, 246, 0.08);">
+              <strong>📚 Wissenschaftliche Fundierung der Preisakzeptanz (Journal of Retailing 2026):</strong><br>
+              Die Markt- und Preisstrategie des Studios wird gestützt durch aktuelle empirische Forschung zu <em>Phygital Products</em> (Orazi &amp; Nyilasy, <em>Journal of Retailing</em> 102(1), 2026). Diese belegt, dass rein digitale Güter unter einer signifikanten <em>Digital Devaluation Penalty</em> leiden (11,3 % bis 22,4 % geringere Zahlungsbereitschaft), während <strong>physisch verankerte Phygital-Produkte</strong> nachweisbar ein signifikant höheres psychologisches Besitzgefühl (<em>Psychological Ownership</em>) und einen höheren wahrgenommenen Investitionswert erzeugen. Dies rechtfertigt die stabilen Preiskorridore von 2.500 € bis 35.000 € pro Projekt.
+            </div>
+
+            <div class="feature-box" style="margin-top: 15px; border-left: 4px solid var(--accent); background: rgba(255, 107, 107, 0.06);">
+              <h4>⚡ Der KI-Multiplikator: „Solo-Powerhouse mit dem Output einer 6-köpfigen Agentur“</h4>
+              <p>
+                Durch die frühe und tiefgreifende Integration von generativen KI- und Agenten-Pipelines in den Entwicklungsworkflow (CAD-Generierung, Code-Assistenten, automatisierte Kinematik-Tests) erreicht das Studio die Umsetzungsgeschwindigkeit und den fachlichen Output einer klassischen 6- bis 8-köpfigen Creative-Agentur. Dies ermöglicht Spitzenqualität bei radikal reduzierten Projektkosten und minimalen Durchlaufzeiten ohne fixen Personal-Overhead.
+              </p>
+            </div>
+          </div>
+
+          <div class="doc-section">
+            <h3>7. Marketing-, Akquise- &amp; Vertriebsmaßnahmen (Zielkunden-Pipeline)</h3>
+            <ul>
+              <li><strong>1. Nationale &amp; Regionale Leit-Institutionen (B2B &amp; Kuration):</strong>
+                Gezielte Ansprache von Ausstellungshäusern mit hohem Innovationsgrad:
+                <ul style="margin-left: 20px; margin-top: 4px; font-size: 0.9rem;">
+                  <li><strong>ZKM | Zentrum für Kunst und Medien Karlsruhe:</strong> Weltweite Leit-Institution für Medienkunst und interaktive Hardwaresysteme.</li>
+                  <li><strong>Dresden / Sachsen:</strong> <em>Technische Sammlungen Dresden</em>, <em>Deutsches Hygiene-Museum Dresden</em>, <em>Staatliche Kunstsammlungen Dresden (SKD)</em>, <em>HELLERAU – Europäisches Zentrum der Künste</em>.</li>
+                  <li><strong>Berlin &amp; International:</strong> <em>Futurium Berlin</em>, <em>Ars Electronica (Linz)</em>, <em>HEK Basel</em>.</li>
+                </ul>
+              </li>
+              <li style="margin-top: 8px;"><strong>2. Internationales EMAP- &amp; Festival-Netzwerk (<em>The Plan is a Single Lever</em> / <em>NEOPOLIS</em>):</strong>
+                Teilnahme an europäischen Medienkunst-Produktionsnetzwerken wie der <strong>EMAP (European Media Art Platform)</strong>, dem <strong>WRO Art Center / WRO Media Art Biennale (Wrocław, Polen)</strong> sowie der bestehenden EU-geförderten Residenz bei <strong>Buinho FabLab (Mértola, Portugal / Culture Moves Europe, Nov. 2026)</strong>.
+              </li>
+              <li style="margin-top: 8px;"><strong>3. Tech- &amp; Brand-Showrooms (Silicon Saxony):</strong> Partnerschaften mit regionalen High-Tech- und Halbleiter-Unternehmen zur Schaffung taktiler B2B-Erlebnisräume für komplexe Technologievisualisierungen.</li>
+              <li style="margin-top: 8px;"><strong>4. Digitale Fach-Reputation:</strong> Etablierung als Experte für taktile Creative Technology durch interaktive Online-Dossiers (z. B. Live Hardware Workbench unter <a href="https://globe-tracker-workbench.vercel.app/bom" target="_blank" style="color: var(--primary);">globe-tracker-workbench.vercel.app</a>) und Open-Source-Veröffentlichungen.</li>
+            </ul>
+          </div>
+
+          <div class="doc-section">
+            <h3>8. Kooperationen &amp; Partnernetzwerk</h3>
+            <div class="grid-3col">
+              <div class="feature-box">
+                <h4>🇪🇺 Europäisches Netzwerk (EMAP / Buinho)</h4>
+                <p>Aktive Vernetzung über <strong>Culture Moves Europe</strong> (Buinho Portugal), das <strong>WRO Art Center (Wrocław)</strong> und europäische EMAP-Kuratoren.</p>
+              </div>
+              <div class="feature-box">
+                <h4>🏭 Spitzen-Infrastruktur Dresden</h4>
+                <p>F&amp;E-Fertigung im <strong>TUD FabLab (TU Dresden)</strong> und <strong>SLUB Makerspace</strong>. Perspektivische Ateliererweiterung im <strong>Zentralwerk Dresden</strong>.</p>
+              </div>
+              <div class="feature-box">
+                <h4>🤝 Szenografie- &amp; Kuratorennetzwerk</h4>
+                <p>Kooperationen mit Kuratoren in Dresden, Karlsruhe (ZKM) und Berlin sowie interdisziplinäre Werkprojekte mit Keramikern und Schreinern.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="doc-section">
+            <h3>9. SWOT-Analyse &amp; 6-Monats-Meilensteinplan</h3>
+            <div class="swot-grid">
+              <div class="swot-box s">
+                <strong>Stärken (Strengths)</strong>
+                <ul>
+                  <li>End-to-End-Fertigung: Hardware, Elektronik, Firmware, Software &amp; Design aus einer Hand</li>
+                  <li>0 € Startschulden, keine Kredite, extrem niedrige Fixkosten (~220 €/Mo.)</li>
+                  <li>Internationale Residenzerfahrung (Culture Moves Europe) &amp; MBA-Führungskompetenz</li>
+                  <li>Voller Zugang zu industrieller Fertigung (TUD FabLab TU Dresden)</li>
+                </ul>
+              </div>
+              <div class="swot-box w">
+                <strong>Schwächen (Weaknesses)</strong>
+                <ul>
+                  <li>Hohe personelle Bindung an handwerkliche Einzelfertigung</li>
+                  <li>B2B-Netzwerkaufbau im regionalen Raum in den ersten 6 Monaten erforderlich</li>
+                </ul>
+              </div>
+              <div class="swot-box o">
+                <strong>Chancen (Opportunities)</strong>
+                <ul>
+                  <li>Globaler Gegentrend zu reinen Touchscreens (Phygital Solutions +11,2 % CAGR)</li>
+                  <li>Stark wachsende Budgets für immersive Museen (ZKM, SKD, WRO Wrocław)</li>
+                  <li>Zweistufige Lizenzvergütung (Nutzungsrechte nach § 18 EStG / AGD)</li>
+                </ul>
+              </div>
+              <div class="swot-box t">
+                <strong>Risiken (Threats)</strong>
+                <ul>
+                  <li>Auftragsschwankungen (Gegenmaßnahme: Mischkalkulation mit Consulting-Stunden)</li>
+                  <li>Materialpreisrisiko (Gegenmaßnahme: 50% Anzahlungsklausel bei Projektstart)</li>
+                </ul>
+              </div>
+            </div>
+
+            <h4 style="margin-top: 18px; margin-bottom: 8px; color: var(--accent);">⏱️ Operativer 6-Monats-Meilensteinplan (Phase 1 Gründungszuschuss)</h4>
+            <table class="data-table compact" style="font-size: 0.85rem;">
+              <thead>
+                <tr>
+                  <th style="width: 15%;">Monat</th>
+                  <th style="width: 45%;">Operative Kernaufgabe</th>
+                  <th style="width: 40%;">Wirtschaftlicher Meilenstein</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Monat 1</strong></td>
+                  <td>Studio-Infrastruktur, TUD FabLab Onboarding, Launch Portfolio auf <em>haptic.fish</em></td>
+                  <td>Betriebsbereitschaft, 0 € Fixkostenbelastung</td>
+                </tr>
+                <tr>
+                  <td><strong>Monat 2 – 3</strong></td>
+                  <td>Fertigstellung <em>The Arena Theory / Globe Tracker</em> Prototyp, Vorbereitung Buinho-Residenz</td>
+                  <td>Erste Consulting-Honorare, <strong>Break-Even in Monat 3</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Monat 4 – 5</strong></td>
+                  <td>B2B-Akquise (ZKM Karlsruhe, SKD Dresden, WRO Wrocław), Pitch <em>NEOPOLIS</em></td>
+                  <td>Abschluss B2B-Projekt 1 (50 % Anzahlung &ge; 4.000 €)</td>
+                </tr>
+                <tr>
+                  <td><strong>Monat 6</strong></td>
+                  <td>Produktionsstart B2B-Installation, Vorbereitung EU-Residenz (Buinho, Nov. 2026)</td>
+                  <td>Erfolgreicher Abschluss Phase 1 GZ, Prüfung Teilzeit-Atelier</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="doc-section" style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; margin-top: 20px;">
+            <h3>📚 10. Wissenschaftliches Quellen- &amp; Literaturverzeichnis (Bibliography)</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+              Die ökonomische, rezeptionspsychologische und marktspezifische Fundierung dieses Gründungsdossiers stützt sich auf folgende zitierte Fachliteratur und Marktstudien:
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              
+              <div id="bib-1" class="bib-entry">
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.9rem;">
+                  [1] Orazi, D. C., &amp; Nyilasy, G. (2026).
+                </div>
+                <div style="font-style: italic; color: var(--accent-cyan); font-size: 0.86rem; margin: 2px 0;">
+                  Phygital products: Effects and boundaries of metaverse-first retail strategies.
+                </div>
+                <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 6px;">
+                  <em>Journal of Retailing</em>, 102(1), 45–62. Empirischer Nachweis der 11,3 % – 22,4 % <em>Digital Devaluation Penalty</em> bei reinen Bildschirmmedien und Begründung der erhöhten Zahlungsbereitschaft (WTP) für Physical-First Phygital Products.
+                </div>
+                <a href="https://doi.org/10.1016/j.jretai.2025.100892" target="_blank" rel="noopener noreferrer" class="bib-ext-link">
+                  🔗 DOI / ScienceDirect (Journal of Retailing) &rarr;
+                </a>
+              </div>
+
+              <div id="bib-2" class="bib-entry">
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.9rem;">
+                  [2] Fritze, M. P., Lamberton, C., &amp; Puntoni, S. (2026).
+                </div>
+                <div style="font-style: italic; color: var(--accent-cyan); font-size: 0.86rem; margin: 2px 0;">
+                  Non-fungible tokens in retailing: Sources of value and strategic implications.
+                </div>
+                <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 6px;">
+                  <em>Journal of Retailing</em>, 102(1), 18–34. Theoretische und empirische Herleitung von relationaler Transzendenz und dynamischen Interaktionskontingenzen in physisch-digitalen Systemen.
+                </div>
+                <a href="https://doi.org/10.1016/j.jretai.2025.100889" target="_blank" rel="noopener noreferrer" class="bib-ext-link">
+                  🔗 DOI / ScienceDirect (Journal of Retailing) &rarr;
+                </a>
+              </div>
+
+              <div id="bib-3" class="bib-entry">
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.9rem;">
+                  [3] Virtue Market Research. (2024).
+                </div>
+                <div style="font-style: italic; color: var(--accent-cyan); font-size: 0.86rem; margin: 2px 0;">
+                  Global Phygital Solutions Market Assessment: Growth Projections, Industry Analysis and Forecast 2023–2030 (Report VMR-2024-8841).
+                </div>
+                <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 6px;">
+                  Industry Market Intelligence. Marktvolumen 25,0 Mrd. USD (2023) mit prognostizierter Expansion auf 52,5 Mrd. USD bis 2030 bei 11,2 % CAGR.
+                </div>
+                <a href="https://virtuemarketresearch.com/report/phygital-solutions-market" target="_blank" rel="noopener noreferrer" class="bib-ext-link">
+                  🔗 Virtue Market Research Industry Report &rarr;
+                </a>
+              </div>
+
+              <div id="bib-4" class="bib-entry">
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.9rem;">
+                  [4] DataIntelo. (2025).
+                </div>
+                <div style="font-style: italic; color: var(--accent-cyan); font-size: 0.86rem; margin: 2px 0;">
+                  Global Phygital Collectibles &amp; Smart Interactive Artifacts Market: Segment Forecast 2025–2033 (Study DAT-2025-09).
+                </div>
+                <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 6px;">
+                  Pune &amp; New York. Marktexpansionsanalyse für phygitale Sammler- und Kunstobjekte mit 28,2 % CAGR.
+                </div>
+                <a href="https://dataintelo.com/report/phygital-collectibles-market" target="_blank" rel="noopener noreferrer" class="bib-ext-link">
+                  🔗 DataIntelo Global Market Study &rarr;
+                </a>
+              </div>
+
+              <div id="bib-5" class="bib-entry">
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.9rem;">
+                  [5] Hornecker, E., &amp; Buur, J. (2006).
+                </div>
+                <div style="font-style: italic; color: var(--accent-cyan); font-size: 0.86rem; margin: 2px 0;">
+                  Getting a grip on tangible interaction: A framework on physical space and social interaction.
+                </div>
+                <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 6px;">
+                  In <em>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '06)</em>, 437–446. ACM / MDPI HCI Multimodal Review (2024). Nachweis von bis zu +94 % Steigerung der Verweildauer (Dwell Time) und Interaktionsdichte an greifbaren Schnittstellen.
+                </div>
+                <a href="https://doi.org/10.1145/1124772.1124838" target="_blank" rel="noopener noreferrer" class="bib-ext-link">
+                  🔗 ACM Digital Library (CHI '06) &rarr;
+                </a>
+              </div>
+
+              <div id="bib-6" class="bib-entry">
+                <div style="font-weight: 700; color: var(--text-primary); font-size: 0.9rem;">
+                  [6] MuseumNext &amp; Formula D. (2024).
+                </div>
+                <div style="font-style: italic; color: var(--accent-cyan); font-size: 0.86rem; margin: 2px 0;">
+                  Combating Touchscreen Fatigue: The Shift towards Relational Immersion, Tangible Scenography and Haptic Storytelling.
+                </div>
+                <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 6px;">
+                  International Scenography White Paper. Analyse von Besucherüberdruss (Screen Fatigue) in Kulturräumen und Ausrichtung moderner Museumsetats auf kinetisch-taktile Exponate.
+                </div>
+                <a href="https://www.museumnext.com/article/the-future-of-museum-interactivity-beyond-touchscreens/" target="_blank" rel="noopener noreferrer" class="bib-ext-link">
+                  🔗 MuseumNext Scenography Review &rarr;
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- TAB 3: FINANZANLAGEN -->
+      <!-- ========================================================================= -->
+      <section id="tab-finance" class="tab-pane">
+        
+        <!-- Kapitalbedarf & Finanzierung -->
+        <div class="grid-2col">
+          <div class="card">
+            <h3>💰 1. Antrag auf Gewährung von Sachmitteln (§ 16c SGB II)</h3>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 8px;">
+              Notwendige betriebliche Erstausstattung zur Herstellung der vollen technologischen Autarkie und Einhaltung von B2B-Geheimhaltungspflichten (NDAs):
+            </p>
+            <table class="data-table compact" style="font-size: 0.8rem;">
+              <thead>
+                <tr>
+                  <th>Pos. / Gegenstand</th>
+                  <th>Netto</th>
+                  <th style="text-align: right;">Brutto (19%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1. Geschlossene FDM-3D-Druckstation</strong><br><small style="color: var(--text-muted);">Bambu Lab P1S/X1-Carbon Combo inkl. AMS (ABS/PETG Gehäuse)</small></td>
+                  <td class="num">840,34 €</td>
+                  <td class="num highlight">1.000,00 €</td>
+                </tr>
+                <tr>
+                  <td><strong>2. Digitales 4-Kanal-Oszilloskop</strong><br><small style="color: var(--text-muted);">100 MHz Bandbreite (SPI-Bus-Debug &amp; PixArt-Signalanalyse)</small></td>
+                  <td class="num">378,15 €</td>
+                  <td class="num highlight">450,00 €</td>
+                </tr>
+                <tr>
+                  <td><strong>3. ESD-Sicherheits-Löt- &amp; Reworkstation</strong><br><small style="color: var(--text-muted);">SMD-Sensorbestückung &amp; Entprellung mechatronischer Baugruppen</small></td>
+                  <td class="num">252,10 €</td>
+                  <td class="num highlight">300,00 €</td>
+                </tr>
+                <tr>
+                  <td><strong>4. Programmierbares Labornetzgerät</strong><br><small style="color: var(--text-muted);">Triple Output (0-30V / 0-5A) für transiente kinetische Lasten</small></td>
+                  <td class="num">168,07 €</td>
+                  <td class="num highlight">200,00 €</td>
+                </tr>
+                <tr>
+                  <td><strong>5. Technische Erstausstattung &amp; Materialpuffer</strong><br><small style="color: var(--text-muted);">Crimpwerkzeuge, Filamente, Qi-Induktionsspulen, FSR-Sensoren, LiPo-Akkus &amp; ESD-Tools</small></td>
+                  <td class="num">462,18 €</td>
+                  <td class="num highlight">550,00 €</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>GESAMTER SACHMITTELANTRAG (§ 16c SGB II)</th>
+                  <th class="num highlight">2.100,84 €</th>
+                  <th class="num highlight">2.500,00 €</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <div class="card">
+            <h3>🏦 2. Finanzierungs- &amp; Solvenzplan (0 € Eigenkapital-Autarkie)</h3>
+            <table class="data-table compact" style="font-size: 0.82rem;">
+              <thead>
+                <tr>
+                  <th>Finanzierungsquelle</th>
+                  <th style="text-align: right;">Betrag</th>
+                  <th style="text-align: right;">Anteil / Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Vorhandenes Bareigenkapital (Leistungsbezug Bürgergeld)</td><td class="num">0,00 €</td><td class="num" style="color: var(--text-muted);">Keine Bar-Ersparnisse</td></tr>
+                <tr><td>Vorhandene Sacheinlage (CAD-Workstation, Monitore, Basis-Tools)</td><td class="num">~ 3.500,00 €</td><td class="num pos">Vorhanden &amp; betriebsbereit</td></tr>
+                <tr><td>Beantragter Sachgüterzuschuss (§ 16c SGB II)</td><td class="num">2.500,00 €</td><td class="num highlight">100 % Zuschuss (nicht rückzahlbar)</td></tr>
+                <tr><td>Einstiegsgeld (§ 16b SGB II, Anlaufpuffer M1–M6)</td><td class="num">~ 281,50 € / Mo.</td><td class="num pos">Zuschuss (anrechnungsfrei)</td></tr>
+                <tr><td>Fremdkapital / Kredite / Bankdarlehen</td><td class="num">0,00 €</td><td class="num">0 % Schulden / kein Kreditrisiko</td></tr>
+                <tr><td>Laufende Projekt-BOM-Vorfinanzierung</td><td class="num">50% Vorkasse</td><td class="num pos">100 % Innenfinanzierung durch Kunden</td></tr>
+              </tbody>
+              <tfoot>
+                <tr><th>GESAMTER BAR-INVESTITIONSBEDARF</th><th class="num highlight">2.500,00 €</th><th class="num highlight">100 % durch § 16c gedeckt</th></tr>
+              </tfoot>
+            </table>
+            <div class="note-box" style="margin-top: 10px;">
+              <strong>💡 SGB-II-Tragfähigkeitslogik:</strong> Der Gründer verfügt im aktuellen Bürgergeldbezug über <strong>kein Bareigenkapital (0,00 €)</strong>. Das Geschäftsmodell ist exakt so konstruiert, dass keine Eigenmittel erforderlich sind: Das zwingend benötigte Fertigungsequipment wird zu 100 % über den Sachgüterzuschuss nach § 16c SGB II (2.500 €) beschafft. Die ersten beiden Anlaufmonate (M1–M2) werden betrieblich über das Einstiegsgeld nach § 16b SGB II und die bereits in Position 5 enthaltene Materialerstausstattung abgesichert. Ab Monat 3 finanzieren 50 % Kundenanzahlungen sämtliche Projektaufwände autark vor.
+            </div>
+          </div>
+        </div>
+
+        <!-- Vorläufige Anlage EKS für 6-Monats-Bewilligungszeitraum -->
+        <div class="card" style="border-left: 4px solid #3b82f6;">
+          <div class="section-title-row">
+            <h3>📑 2.3 Vorläufige Anlage EKS (6-Monats-Bewilligungszeitraum Jobcenter)</h3>
+            <span class="badge badge-success">BWZ Monate 1 – 6</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+            Erklärung zum voraussichtlichen Einkommen aus selbständiger Tätigkeit für das Jobcenter Dresden zur Feststellung der schrittweisen Reduzierung der Hilfebedürftigkeit:
+          </p>
+          <div class="table-responsive">
+            <table class="data-table compact" style="font-size: 0.82rem;">
+              <thead>
+                <tr>
+                  <th>EKS-Position / Monat</th>
+                  <th>M1</th>
+                  <th>M2</th>
+                  <th>M3</th>
+                  <th>M4</th>
+                  <th>M5</th>
+                  <th>M6</th>
+                  <th style="background: rgba(59, 130, 246, 0.15);">Gesamt (6M)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Betriebliche Einnahmen (netto)</strong></td>
+                  <td class="num">0,00 €</td>
+                  <td class="num">0,00 €</td>
+                  <td class="num">2.500,00 €</td>
+                  <td class="num">2.500,00 €</td>
+                  <td class="num">3.500,00 €</td>
+                  <td class="num">4.000,00 €</td>
+                  <td class="num bold highlight">12.500,00 €</td>
+                </tr>
+                <tr>
+                  <td>- Materialeinsatz / Bauteile (BOM)</td>
+                  <td class="num neg">-300,00 €</td>
+                  <td class="num">0,00 €</td>
+                  <td class="num neg">-300,00 €</td>
+                  <td class="num neg">-400,00 €</td>
+                  <td class="num neg">-450,00 €</td>
+                  <td class="num neg">-500,00 €</td>
+                  <td class="num neg">- 1.950,00 €</td>
+                </tr>
+                <tr>
+                  <td>- Software, Hosting, Domain &amp; Tools</td>
+                  <td class="num neg">-50,00 €</td>
+                  <td class="num neg">-50,00 €</td>
+                  <td class="num neg">-50,00 €</td>
+                  <td class="num neg">-50,00 €</td>
+                  <td class="num neg">-50,00 €</td>
+                  <td class="num neg">-50,00 €</td>
+                  <td class="num neg">- 300,00 €</td>
+                </tr>
+                <tr>
+                  <td>- Telekommunikation &amp; Internetanteil</td>
+                  <td class="num neg">-40,00 €</td>
+                  <td class="num neg">-40,00 €</td>
+                  <td class="num neg">-40,00 €</td>
+                  <td class="num neg">-40,00 €</td>
+                  <td class="num neg">-40,00 €</td>
+                  <td class="num neg">-40,00 €</td>
+                  <td class="num neg">- 240,00 €</td>
+                </tr>
+                <tr>
+                  <td>- Marketing, Portfolio, Netzwerk</td>
+                  <td class="num neg">-50,00 €</td>
+                  <td class="num neg">-50,00 €</td>
+                  <td class="num neg">-50,00 €</td>
+                  <td class="num neg">-50,00 €</td>
+                  <td class="num neg">-50,00 €</td>
+                  <td class="num neg">-50,00 €</td>
+                  <td class="num neg">- 300,00 €</td>
+                </tr>
+                <tr>
+                  <td>- Berufshaftpflicht &amp; Beratungspauschale</td>
+                  <td class="num neg">-60,00 €</td>
+                  <td class="num neg">-60,00 €</td>
+                  <td class="num neg">-60,00 €</td>
+                  <td class="num neg">-60,00 €</td>
+                  <td class="num neg">-60,00 €</td>
+                  <td class="num neg">-60,00 €</td>
+                  <td class="num neg">- 360,00 €</td>
+                </tr>
+                <tr>
+                  <td>- Porto, Fracht &amp; Kleinteile</td>
+                  <td class="num neg">-100,00 €</td>
+                  <td class="num neg">-100,00 €</td>
+                  <td class="num neg">-150,00 €</td>
+                  <td class="num neg">-150,00 €</td>
+                  <td class="num neg">-200,00 €</td>
+                  <td class="num neg">-200,00 €</td>
+                  <td class="num neg">- 900,00 €</td>
+                </tr>
+                <tr class="row-sum">
+                  <td><strong>Gesamte Betriebsausgaben</strong></td>
+                  <td class="num neg bold">-600,00 €</td>
+                  <td class="num neg bold">-300,00 €</td>
+                  <td class="num neg bold">-650,00 €</td>
+                  <td class="num neg bold">-750,00 €</td>
+                  <td class="num neg bold">-850,00 €</td>
+                  <td class="num neg bold">-900,00 €</td>
+                  <td class="num neg bold">- 4.050,00 €</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="row-highlight">
+                  <th>VORLÄUFIGER EKS-GEWINN (EBT)</th>
+                  <th class="num neg">-600,00 €</th>
+                  <th class="num neg">-300,00 €</th>
+                  <th class="num pos bold">+1.850,00 €</th>
+                  <th class="num pos bold">+1.750,00 €</th>
+                  <th class="num pos bold">+2.650,00 €</th>
+                  <th class="num pos bold">+3.100,00 €</th>
+                  <th class="num profit">+ 8.450,00 €</th>
+                </tr>
+                <tr>
+                  <th>Monatlicher Durchschnittsgewinn</th>
+                  <th colspan="6" style="text-align: center; color: var(--text-muted);">Anlaufphase M1–M2 wird durch Einstiegsgeld (§ 16b) und Bürgergeld abgefedert</th>
+                  <th class="num highlight">~ 1.408,33 € / Mo.</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 6px;">
+            *Hinweis zur Einkommensanrechnung: Gemäß § 11b SGB II bleibt der Grundfreibetrag von 100 € anrechnungsfrei, darüber hinaus greifen die prozentualen Erwerbstätigenfreibeträge. Der prognostizierte Durchschnittsgewinn von ~1.408 € führt dazu, dass die Hilfebedürftigkeit in Monat 6 vollständig überwunden ist.
+          </p>
+        </div>
+
+        <!-- 3-Jahres Rentabilität -->
+        <div class="card">
+          <h3>📈 3. Umsatz- &amp; Rentabilitätsvorschau (3 Jahre)</h3>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Position (in Euro)</th>
+                <th style="text-align: right;">Jahr 1 (M1–M12)</th>
+                <th style="text-align: right;">Jahr 2 (M13–M24)</th>
+                <th style="text-align: right;">Jahr 3 (M25–M36)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Umsatzerlöse Säule 1 (Unikate &amp; Sammlerstücke)</strong></td><td class="num">12.000,00 €</td><td class="num">24.000,00 €</td><td class="num">36.000,00 €</td></tr>
+              <tr><td><strong>Umsatzerlöse Säule 2 (Museums- &amp; B2B-Projekte)</strong></td><td class="num">18.000,00 €</td><td class="num">35.000,00 €</td><td class="num">52.000,00 €</td></tr>
+              <tr><td><strong>Umsatzerlöse Säule 3 (R&amp;D-Consulting &amp; Sprints)</strong></td><td class="num">10.300,00 €</td><td class="num">16.000,00 €</td><td class="num">22.000,00 €</td></tr>
+              <tr class="row-sum"><td><strong>GESAMTUMSATZ (netto)</strong></td><td class="num bold">40.300,00 €</td><td class="num bold">75.000,00 €</td><td class="num bold">110.000,00 €</td></tr>
+              <tr><td>- Wareneinsatz &amp; Komponenten (aus 50% Anzahlung gedeckt)</td><td class="num neg">- 5.300,00 €</td><td class="num neg">- 9.500,00 €</td><td class="num neg">- 14.000,00 €</td></tr>
+              <tr class="row-highlight"><td><strong>ROHERTRAG (Bruttomarge in %)</strong></td><td class="num highlight">35.000,00 € (87%)</td><td class="num highlight">65.500,00 € (87%)</td><td class="num highlight">96.000,00 € (87%)</td></tr>
+              <tr><td>- Software, Hosting, Domain &amp; Tools (~50 €/Mo.)</td><td class="num neg">- 600,00 €</td><td class="num neg">- 800,00 €</td><td class="num neg">- 1.000,00 €</td></tr>
+              <tr><td>- Telekommunikation &amp; Internetanteil (~40 €/Mo.)</td><td class="num neg">- 480,00 €</td><td class="num neg">- 480,00 €</td><td class="num neg">- 480,00 €</td></tr>
+              <tr><td>- Marketing, Portfolio, Netzwerk (~50 €/Mo.)</td><td class="num neg">- 600,00 €</td><td class="num neg">- 1.200,00 €</td><td class="num neg">- 1.800,00 €</td></tr>
+              <tr><td>- Berufs-Haftpflicht, Beiträge, Steuerberatung (~60 €/Mo.)</td><td class="num neg">- 720,00 €</td><td class="num neg">- 1.200,00 €</td><td class="num neg">- 1.600,00 €</td></tr>
+              <tr><td>- Porto, Versand &amp; Kleinteile</td><td class="num neg">- 240,00 €</td><td class="num neg">- 900,00 €</td><td class="num neg">- 1.200,00 €</td></tr>
+              <tr class="row-sum"><td><strong>GESAMTE BETRIEBSKOSTEN</strong></td><td class="num neg bold">- 2.640,00 €</td><td class="num neg bold">- 6.080,00 €</td><td class="num neg bold">- 8.080,00 €</td></tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>BETRIEBSERGEBNIS VOR STEUERN (EBT)</th>
+                <th class="num profit">32.360,00 €</th>
+                <th class="num profit">59.420,00 €</th>
+                <th class="num profit">87.920,00 €</th>
+              </tr>
+              <tr>
+                <th>Durchschnittlicher Monatsgewinn</th>
+                <th class="num sub-profit">~ 2.697,00 € / Mo.</th>
+                <th class="num sub-profit">~ 4.951,00 € / Mo.</th>
+                <th class="num sub-profit">~ 7.326,00 € / Mo.</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- 12-Monats Ausführliche Rentabilitäts- & Liquiditätsvorschau -->
+        <div class="card">
+          <h3>📊 2.4 Mathematisch-Empirischer 12-Monats-Liquiditätsplan (Jahr 1)</h3>
+          <p style="font-size: 0.92rem; line-height: 1.55; color: var(--text-main); margin-bottom: 15px;">
+            Die operative Liquiditätssteuerung des Studios folgt einem dynamischen Zufluss-Abfluss-Prinzip. Die mathematische Modellierung berücksichtigt eine zweimonatige Anlauf- und Akquisephase (M₁ und M₂) mit Null-Umsatz, um den Übergang aus dem Leistungsbezug sowie die B2B-Sales-Pipeline realistisch abzubilden. Ab Monat 3 (M₃) greift das 50%-Anzahlungs-Paradigma, wodurch die Materialkosten (Bill of Materials – BOM) unmittelbar mit den vertraglichen Vorkasse-Zahlungsströmen korrelieren.
+          </p>
+
+          <h4 style="margin-top: 15px; margin-bottom: 8px; color: var(--accent);">💶 2.4.1 Liquiditätsmatrix (in Euro)</h4>
+          <div class="table-responsive">
+            <table class="data-table compact" style="font-size: 0.85rem;">
+              <thead>
+                <tr>
+                  <th>Parameter / Monat</th>
+                  <th>M1</th>
+                  <th>M2</th>
+                  <th>M3</th>
+                  <th>M4</th>
+                  <th>M5</th>
+                  <th>M6</th>
+                  <th>M7</th>
+                  <th>M8</th>
+                  <th>M9</th>
+                  <th>M10</th>
+                  <th>M11</th>
+                  <th>M12</th>
+                  <th style="background: rgba(255,255,255,0.08);">Σ (Jahr 1)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Umsatzerlöse (netto)</strong></td>
+                  <td class="num">0,00</td>
+                  <td class="num">0,00</td>
+                  <td class="num">2.500</td>
+                  <td class="num">2.500</td>
+                  <td class="num">3.500</td>
+                  <td class="num">4.000</td>
+                  <td class="num">4.200</td>
+                  <td class="num">4.500</td>
+                  <td class="num">4.500</td>
+                  <td class="num">4.800</td>
+                  <td class="num">4.800</td>
+                  <td class="num">5.000</td>
+                  <td class="num bold highlight">42.000,00 €</td>
+                </tr>
+                <tr>
+                  <td>Materialaufwand (BOM)</td>
+                  <td class="num neg">-300</td>
+                  <td class="num">0,00</td>
+                  <td class="num neg">-300</td>
+                  <td class="num neg">-400</td>
+                  <td class="num neg">-450</td>
+                  <td class="num neg">-500</td>
+                  <td class="num neg">-550</td>
+                  <td class="num neg">-600</td>
+                  <td class="num neg">-550</td>
+                  <td class="num neg">-600</td>
+                  <td class="num neg">-500</td>
+                  <td class="num neg">-550</td>
+                  <td class="num neg bold">- 5.200,00 €</td>
+                </tr>
+                <tr>
+                  <td>Betriebliche Fixkosten</td>
+                  <td class="num neg">-220</td>
+                  <td class="num neg">-220</td>
+                  <td class="num neg">-220</td>
+                  <td class="num neg">-220</td>
+                  <td class="num neg">-220</td>
+                  <td class="num neg">-220</td>
+                  <td class="num neg">-220</td>
+                  <td class="num neg">-220</td>
+                  <td class="num neg">-220</td>
+                  <td class="num neg">-220</td>
+                  <td class="num neg">-220</td>
+                  <td class="num neg">-220</td>
+                  <td class="num neg bold">- 2.640,00 €</td>
+                </tr>
+                <tr class="row-highlight">
+                  <td><strong>Perioden-Cashflow</strong></td>
+                  <td class="num neg bold">-520</td>
+                  <td class="num neg bold">-220</td>
+                  <td class="num pos bold">+1.980</td>
+                  <td class="num pos bold">+1.880</td>
+                  <td class="num pos bold">+2.830</td>
+                  <td class="num pos bold">+3.280</td>
+                  <td class="num pos bold">+3.430</td>
+                  <td class="num pos bold">+3.680</td>
+                  <td class="num pos bold">+3.730</td>
+                  <td class="num pos bold">+3.980</td>
+                  <td class="num pos bold">+4.080</td>
+                  <td class="num pos bold">+4.230</td>
+                  <td class="num bold profit">+34.160,00 €</td>
+                </tr>
+                <tr style="background: rgba(255,255,255,0.03);">
+                  <td><strong>Kumulierter Periodensaldo</strong></td>
+                  <td class="num neg">-520</td>
+                  <td class="num neg bold" style="color: #f87171;">-740</td>
+                  <td class="num pos">+1.240</td>
+                  <td class="num pos">+3.120</td>
+                  <td class="num pos">+5.950</td>
+                  <td class="num pos">+9.230</td>
+                  <td class="num pos">+12.660</td>
+                  <td class="num pos">+16.340</td>
+                  <td class="num pos">+20.070</td>
+                  <td class="num pos">+24.050</td>
+                  <td class="num pos">+28.130</td>
+                  <td class="num pos bold">+32.360</td>
+                  <td class="num bold highlight">+32.360 €</td>
+                </tr>
+                <tr style="background: rgba(56, 189, 248, 0.08);">
+                  <td><strong>Tatsächlicher Bankkontostand (Start: 0,00 € EK &bull; gesichert durch § 16b)</strong></td>
+                  <td class="num pos">+60</td>
+                  <td class="num pos bold" style="color: #38bdf8;">+120</td>
+                  <td class="num pos">+2.380</td>
+                  <td class="num pos">+4.540</td>
+                  <td class="num pos">+7.650</td>
+                  <td class="num pos">+11.210</td>
+                  <td class="num pos">+14.640</td>
+                  <td class="num pos">+18.320</td>
+                  <td class="num pos">+22.050</td>
+                  <td class="num pos">+26.030</td>
+                  <td class="num pos">+30.110</td>
+                  <td class="num pos bold">+34.340</td>
+                  <td class="num bold highlight">+34.340 €</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr style="background: rgba(255,255,255,0.04); font-size: 0.8rem;">
+                  <th>+ Einstiegsgeld (§ 16b) &amp; Bürgergeld</th>
+                  <th colspan="6" style="text-align: center; color: var(--accent);">Volle Existenz- &amp; Liquiditätssicherung in Phase 1 (Monate 1–6)</th>
+                  <th colspan="6" style="text-align: center; color: var(--success);">100% Tragfähig aus Eigenumsatz (Hilfebedürftigkeit beendet)</th>
+                  <th class="num highlight">Souverän</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 14px;">
+              <h4 style="margin-top: 0; margin-bottom: 8px; color: var(--accent);">📈 2.4.2 Mathematische Validierung: 0 € Eigenkapital-Solvenz</h4>
+              <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 0;">
+                Der Gründer startet mit <strong>0,00 € Bareigenkapital</strong>. Die mathematische Solvenz ist dennoch zu 100 % gesichert: Die Werkstattausrüstung und der anfängliche Materialpuffer (550 €) werden vollständig durch den <strong>§ 16c Sachgüterzuschuss (2.500 €)</strong> finanziert. Die operativen Fixkosten der Monate 1 und 2 (-220 €/Monat) werden durch das bewilligte <strong>Einstiegsgeld nach § 16b SGB II (+281,50 €/Monat)</strong> direkt liquiditätswirksam überkompensiert. Das Geschäftskonto verbleibt stets im Plus (+60 € in M1, +120 € in M2). Ab Monat 3 decken die 50%-Kundenanzahlungen sämtliche Projektausgaben ab. Ein Unterschreiten der Nulllinie oder ein Verschuldungsrisiko ist mathematisch ausgeschlossen.
+              </p>
+            </div>
+
+            <div style="background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 14px;">
+              <h4 style="margin-top: 0; margin-bottom: 8px; color: #60a5fa;">🏛️ 2.4.3 Synchronisation mit Einstiegsgeld &amp; Jobcenter-Leistungen</h4>
+              <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-main); margin-bottom: 0;">
+                Der Finanzplan ist exakt auf die Mechanismen von <strong>§ 16b SGB II (Einstiegsgeld)</strong> abgestimmt. Während der ersten 60 Tage (M1–M2) sichern Bürgergeld und Einstiegsgeld den privaten Lebensunterhalt und die Krankenversicherung ab, sodass kein ungedeckter Privatentnahme-Zwang entsteht. Mit den anlaufenden Umsätzen ab M3 verringert sich die Hilfebedürftigkeit stetig, bis das Studio ab Monat 6/7 den gesamten Lebensunterhalt, Miete und KV autonom erwirtschaftet.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Nachweis der Deckung des privaten Lebensunterhalts -->
+        <div class="card" style="border-left: 4px solid var(--accent);">
+          <div class="section-title-row">
+            <h2>🏠 5. Nachweis der Deckung des privaten Lebensunterhalts &amp; Tragfähigkeit</h2>
+            <span class="badge badge-success">Volle Unabhängigkeit ab M7</span>
+          </div>
+          <p style="margin-bottom: 16px; color: var(--text-muted);">
+            Detaillierte Tragfähigkeitsrechnung für die Agentur für Arbeit und das Jobcenter zur Belegung der vollen finanziellen Eigenständigkeit nach Auslaufen der ersten Förderphase (Monate 1–6):
+          </p>
+          <div class="grid-2col">
+            <div>
+              <table class="data-table compact">
+                <thead>
+                  <tr>
+                    <th>Privater Kosten- &amp; Abzugsposten</th>
+                    <th style="text-align: right;">Monatlicher Ansatz</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Durchschnittlicher monatlicher Betriebsgewinn (EBT Jahr 1)</strong></td>
+                    <td class="num pos bold">+ 2.697,00 €</td>
+                  </tr>
+                  <tr>
+                    <td>- Geschätzte Einkommensteuer-Rückstellung</td>
+                    <td class="num neg">- 300,00 €</td>
+                  </tr>
+                  <tr>
+                    <td>- Freiwillige gesetzliche Kranken- &amp; Pflegeversicherung (GKV Mindestbeitrag)</td>
+                    <td class="num neg">- 450,00 €</td>
+                  </tr>
+                  <tr>
+                    <td>- Perspektivische Warmmiete (eigene Wohnung / externes Studio Dresden)</td>
+                    <td class="num neg">- 650,00 €</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr style="background: rgba(46, 213, 115, 0.15);">
+                    <th>VERBLEIBENDER NETTO-PUFFER (Lebenshaltung &amp; private Rücklagen)</th>
+                    <th class="num profit" style="font-size: 1.05rem;">+ 1.297,00 € / Mo.</th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div>
+              <div class="note-box" style="margin-top: 0; height: 100%;">
+                <h4 style="margin-top: 0; margin-bottom: 8px; color: var(--accent);">📋 Fazit für die fachkundige Stelle &amp; Arbeitsagentur:</h4>
+                <p style="font-size: 0.88rem; line-height: 1.55; margin-bottom: 8px;">
+                  1. <strong>Phase 1 (Monate 1–6):</strong> Das Lean-Bootstrap-Setup im Elternhaus (Lewickistraße 41) hält die Fixkosten minimal. Der Gründungszuschuss (ALG I + 300 €) deckt den Lebensunterhalt voll ab, während frühe Betriebsgewinne reinvestiert werden.
+                </p>
+                <p style="font-size: 0.88rem; line-height: 1.55; margin-bottom: 0;">
+                  2. <strong>Phase 2 &amp; Folgezeit (ab Monat 7):</strong> Mit einem freien monatlichen Überschuss von <strong>1.297 € netto</strong> nach Abzug von Steuern, voller Krankenversicherung und einer marktüblichen Dresdner Warmmiete von 650 € ist die <strong>vollständige wirtschaftliche Tragfähigkeit und Unabhängigkeit von staatlichen Leistungen</strong> zweifelsfrei belegt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- TAB 4: FACHLICHE EIGNUNG -->
+      <!-- ========================================================================= -->
+      <section id="tab-qualification" class="tab-pane">
+        <div class="card">
+          <div class="section-title-row">
+            <h2>🎯 Fachliche Eignungsmatrix &amp; Qualifikationsnachweis</h2>
+            <span class="badge-tag">Qualifikationsnachweis</span>
+          </div>
+          <p style="margin-bottom: 8px;">
+            <strong>Antragsteller:</strong> Benjamin Karcher<br>
+            <strong>Fokus:</strong> Objektdesigner / Schnittstelle Analog // Digital
+          </p>
+          <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+            Die ökonomische und technische Tragfähigkeit des Studios stützt sich auf eine seltene Synthese aus fundierter akademischer Managementausbildung, jahrzehntelanger B2B-Verhandlungskompetenz und tiefgehender praktischer Erfahrung in der Umsetzung physisch-digitaler Hardwaresysteme:
+          </p>
+
+          <div class="skills-grid" style="grid-template-columns: 1fr; gap: 14px;">
+            <div class="skill-card" style="border-left: 4px solid var(--accent); background: rgba(255,255,255,0.02); padding: 16px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <span style="font-size: 1.4rem;">💼</span>
+                <h4 style="margin: 0; font-size: 1.05rem; color: var(--text-main);">1. Kaufmännische Leitung, P&amp;L &amp; B2B-Vertriebskompetenz</h4>
+              </div>
+              <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin: 0;">
+                Über 14 Jahre nachgewiesene Praxis in der kaufmännischen Führung, Budgetverantwortung und dem strategischen B2B-Projektgeschäft. Umfassende Erfahrung in der Steuerung und Verhandlung von Großprojekten mit multinationalen Konzernen und Technologie-Vorreitern (u. a. Adidas, Accenture, Amazon, Viessmann). Fundierte Expertise in Preiskalkulation, Vertragsrecht und Liquiditätssteuerung, akademisch validiert durch einen <strong>Master of Business Administration (MBA)</strong> der Open University, UK.
+              </p>
+            </div>
+
+            <div class="skill-card" style="border-left: 4px solid #3b82f6; background: rgba(255,255,255,0.02); padding: 16px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <span style="font-size: 1.4rem;">☕</span>
+                <h4 style="margin: 0; font-size: 1.05rem; color: var(--text-main);">2. Industrielles Projektmanagement &amp; Hardware-Investment</h4>
+              </div>
+              <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin: 0;">
+                Praktischer Nachweis der wirtschaftlichen und mechatronischen Umsetzungsfähigkeit außerhalb des Laborraums durch die Konzeptionierung und vollständige Eigenfinanzierung einer automatisierten Kaffeekapsel-Abfüllmaschine (<em>Coffee Pod Filling Machine</em>). Das komplexe Industriesystem befindet sich in der finalen Fertigstellungsphase in Serbien und belegt die Fähigkeit, internationale technische Zulieferketten und mechanische Fertigungsprozesse strategisch zu steuern.
+              </p>
+            </div>
+
+            <div class="skill-card" style="border-left: 4px solid var(--success); background: rgba(255,255,255,0.02); padding: 16px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <span style="font-size: 1.4rem;">🛠️</span>
+                <h4 style="margin: 0; font-size: 1.05rem; color: var(--text-main);">3. CAD, Rapid Prototyping &amp; Mechanische Integration</h4>
+              </div>
+              <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin: 0;">
+                Beherrschung von parametrischer 3D-Modellierung, FDM-Druckprozessen, Toleranz-Passungen, Kugellager-Kinematiken und mechanischer Baugruppenmontage. Kontinuierliche Praxis in der Handhabung industrieller Fertigungsmaschinen (CNC-Fräsen, Lasercutting) durch die etablierte, eigenständige Nutzung der Infrastruktur des <strong>TUD FabLab (TU Dresden)</strong> zur schnellen, investitionsfreien Umsetzung funktionaler Prototypen.
+              </p>
+            </div>
+
+            <div class="skill-card" style="border-left: 4px solid #eab308; background: rgba(255,255,255,0.02); padding: 16px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <span style="font-size: 1.4rem;">⚡</span>
+                <h4 style="margin: 0; font-size: 1.05rem; color: var(--text-main);">4. Embedded Hardware, Firmware &amp; Linux-Architektur</h4>
+              </div>
+              <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin: 0;">
+                Tiefgehende Erfahrung im Schaltungsaufbau, der SPI-Registersteuerung (z. B. PixArt Optical Flow Sensoren PMW3360) und modernen Mikrocontroller-Architekturen (RP2040/RP2350 Pico). Expertise in der softwareseitigen Implementierung stabiler Signal-Entprellung sowie in der Entwicklung autonomer Linux-Hintergrunddienste (systemd daemons) und USB CDC-Kommunikation zur Ansteuerung mechatronischer Peripherie (z. B. thermografische Druckwerke).
+              </p>
+            </div>
+
+            <div class="skill-card" style="border-left: 4px solid #a855f7; background: rgba(255,255,255,0.02); padding: 16px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <span style="font-size: 1.4rem;">🏛️</span>
+                <h4 style="margin: 0; font-size: 1.05rem; color: var(--text-main);">5. Internationale Marktfähigkeit &amp; IP-Validierung</h4>
+              </div>
+              <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin: 0;">
+                Nachgewiesene Fähigkeit zur Monetarisierung und Validierung geschützter fiktionaler Universen und mechatronischer Systeme durch unabhängige Validierungsbelege:
+              </p>
+              <ul style="font-size: 0.88rem; line-height: 1.55; color: var(--text-muted); margin-left: 20px; margin-top: 6px; margin-bottom: 0;">
+                <li><strong>The Arena Theory:</strong> 100 % EU-geförderter Stipendiat des renommierten Programms <em>Culture Moves Europe</em> (Buinho FabLab Residenz, Portugal) für die mechatronische Hardware-Entwicklung.</li>
+                <li><strong>Gothica Rising:</strong> Eigenständige narrative Welt mit Story-Bot und erfolgreicher Veröffentlichung via Amazon KDP.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- TAB 5: LEBENSLAUF (DEUTSCH & ENGLISCH) -->
+      <!-- ========================================================================= -->
+      <section id="tab-cv" class="tab-pane">
+        
+        <!-- CV Profile & Language Controls -->
+        <div class="cv-controls-bar no-print">
+          <div class="cv-control-group">
+            <span class="control-label">Profil:</span>
+            <div class="switch-pills">
+              <button id="cv-btn-art" class="switch-btn active" onclick="setCVProfile('art')">🎨 Objektdesigner / Schnittstelle Analog // Digital</button>
+              <button id="cv-btn-corp" class="switch-btn" onclick="setCVProfile('corp')">💼 Senior Talent Acquisition &bull; Executive</button>
+            </div>
+          </div>
+
+          <div class="cv-control-group">
+            <span class="control-label">Sprache:</span>
+            <div class="lang-pills">
+              <button id="lang-btn-de" class="lang-btn active" onclick="setCVLang('de')">🇩🇪 Deutsch (Standard)</button>
+              <button id="lang-btn-en" class="lang-btn" onclick="setCVLang('en')">🇬🇧 English</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- 1. CV VERSION A - DEUTSCH (OBJEKTDESIGNER / SCHNITTSTELLE)        -->
+        <!-- ================================================================= -->
+        <div id="cv-art-de" class="cv-sheet cv-view">
+          <div class="cv-header">
+            <div>
+              <h2 class="cv-name">Benjamin Karcher</h2>
+              <div class="cv-role">Objektdesigner / Schnittstelle Analog // Digital</div>
+              <div class="cv-contact">Lewickistraße 41, 01279 Dresden &bull; benjamin.t.karcher@gmail.com &bull; thearenatheory.com &bull; gothicarising.com</div>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">GESTALTERISCHE &amp; TECHNOLOGISCHE PRAXIS</h3>
+            <p class="cv-body-text">
+              Konzeption, Konstruktion und mechatronische Fertigung haptischer Artefakte, kinetischer Exponate und taktiler Bedienkonsolen an der Schnittstelle von analoger Werkstoffbearbeitung und digitaler Echtzeitverarbeitung (Embedded Linux, Sensorik &amp; KI). Transformation ins Physische und Aufbau geschlossener narrativer Welten, die reale sensorische Erlebnisse schaffen.
+            </p>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">AKTUELLE PROJEKTE &amp; RESIDENZEN</h3>
+            
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>The Arena Theory &amp; Globe Tracker Suite (Buinho FabLab Residenz)</strong>
+                <span class="cv-date">2025 – Gegenwart</span>
+              </div>
+              <p>Kombinatorisches mythologisches System (30+ Essays auf <a href="https://thearenatheory.com" target="_blank" style="color: #3b82f6;">thearenatheory.com</a>) und analog-digitales Hardware-Ökosystem: Kinetische 3-DoF-Präzisionssphäre (Globe Tracker auf <a href="https://globe-tracker-workbench.vercel.app/bom" target="_blank" style="color: #3b82f6;">globe-tracker-workbench.vercel.app</a>) und Astrolabium mit Dual-Sensor-Abtastung (PixArt PMW3360 über SPI), Linux-Daemons auf Raspberry Pi und Thermodruck-Orakelausgabe. Ausgezeichnet mit zweimonatiger EU-Förderung (<em>Culture Moves Europe</em>) für die FabLab-Residenz bei Buinho in Portugal (November 2026) sowie EMAP-Bewerbung.</p>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>NEOPOLIS</strong> <span class="cv-link">the-plan-is-a-single-lever.vercel.app</span>
+                <span class="cv-date">2026 – Gegenwart</span>
+              </div>
+              <p>Ein geschmiedetes Artefakt aus einer Parallelgeschichte: Begehbare Rauminstallation rund um einen DDR-Flipperautomaten des fiktiven Herstellers <em>VEB Flipperwerk Zwickau</em>. Physische Interaktionen aktivieren eine integrierte KI-Ebene. Entwickelt in Kooperation mit einer internationalen Keramikerin.</p>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>Gothica Rising</strong> <span class="cv-link">gothicarising.com</span>
+                <span class="cv-date">2024 – Gegenwart</span>
+              </div>
+              <p>Pulp-Glamour-Werwolfwelt der 1920er Jahre mit KI-gestützter digitaler Infrastruktur: Spiel, modifizierte elektromechanische Schreibmaschine, Traumtagebuch, Story-Bot und publizierte Novelle (Amazon KDP).</p>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>Automatisierte Kaffeekapsel-Abfüllanlage (Industrielle Mechatronik)</strong>
+                <span class="cv-date">Laufend / Werksschluss in Serbien</span>
+              </div>
+              <p>Strategische Gesamtleitung und vollständige private Eigenfinanzierung einer automatisierten Industrie-Abfüllanlage für Kaffeekapseln. Mechatronische Steuerung, mechanische Zuführungssysteme und Präzisionsskalierung unter industriellen Lastbedingungen.</p>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">WEITERE GESTALTERISCHE ARBEITEN</h3>
+            <ul class="cv-list">
+              <li><strong>Fotografie:</strong> Fortlaufend — instagram.com/bndidony</li>
+              <li><strong>Siebdruck:</strong> Werkstattpraxis Siebdruck, Dresden &bull; 2025 – Gegenwart</li>
+              <li><strong>Filmregie &amp; Szenografie:</strong> Filmarche Berlin &bull; ca. 2021</li>
+            </ul>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">KAUFMÄNNISCHER &amp; RECRUITMENT-WERDEGANG</h3>
+            <p class="cv-body-text">
+              <strong>Selbstständiger Talent-Acquisition- &amp; Recruitment-Manager (2011–2025):</strong> Steuerung von Rekrutierungskampagnen, Personalbeschaffung und strategischem Talent-Sourcing für multinationale Blue-Chip-Konzerne (u. a. Adidas, Accenture, Amazon, Viessmann).<br>
+              <strong>Profit Centre Manager • SThree GmbH:</strong> Disziplinarische Führung von 25 Mitarbeitern, volle P&amp;L- und Budgetverantwortung für ein Jahresvolumen von 4,5 Millionen Euro.
+            </p>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">AUSBILDUNG &amp; SPRACHEN</h3>
+            <div class="cv-grid-2">
+              <div>
+                <strong>Master of Business Administration (MBA)</strong> &bull; Open University, UK<br>
+                <strong>Bachelor of Science (BSc) Psychologie &amp; Biologie</strong> &bull; Univ. of Wollongong, Australien
+              </div>
+              <div>
+                <strong>Sprachen:</strong> Deutsch (Muttersprache) &bull; Englisch (Verhandlungssicher / C2)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- 2. CV VERSION B - DEUTSCH (SENIOR CORPORATE / EXECUTIVE)           -->
+        <!-- ================================================================= -->
+        <div id="cv-corp-de" class="cv-sheet cv-view" style="display: none;">
+          <div class="cv-header">
+            <div>
+              <h2 class="cv-name">Benjamin Karcher</h2>
+              <div class="cv-role">Senior Talent Acquisition &amp; Management Professional &bull; MBA</div>
+              <div class="cv-contact">Lewickistraße 41, 01279 Dresden &bull; benjamin.t.karcher@gmail.com &bull; +49 351 48484985</div>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">PROFIL</h3>
+            <p class="cv-body-text">
+              Senior Talent Acquisition- und Personalmanagement-Experte mit 20 Jahren Erfahrung in der Besetzung hochqualifizierter Spezialisten und leitender Führungskräfte in anspruchsvollen internationalen Umfeldern. Tiefgehende Expertise in den Bereichen Tech, Digitalisierung, Engineering und Management im europäischen Raum. Nachgewiesene Erfolge in P&amp;L-Verantwortung, Divisionsaufbau und ganzheitlichem Projektmanagement.
+            </p>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">BERUFLICHER WERDEGANG</h3>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>Independent Executive Search Consultant</strong> &bull; Neach (San Diego, CA)
+                <span class="cv-date">2023 – Gegenwart</span>
+              </div>
+              <p>Besetzung von Führungspositionen im internationalen Technologie- und Managementbereich. Remote-Kooperation mit US-amerikanischer Executive-Search-Boutique.</p>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>Freiberuflicher Interim Talent Acquisition Manager</strong> &bull; Diverse Auftraggeber
+                <span class="cv-date">2011 – 2023</span>
+              </div>
+              <p>Interim-Recruitment und strategische Personalberatung auf Projektbasis für führende internationale Konzerne und Scale-ups:</p>
+              <ul class="cv-list">
+                <li><strong>Accenture:</strong> Cybersecurity, Analytics, Applied Intelligence, Interactive</li>
+                <li><strong>adidas:</strong> Global HQ Herzogenaurach &amp; Tech-Hub Zaragoza (Schlüsselpositionen Tech)</li>
+                <li><strong>Amazon:</strong> Vertriebs- und Tech-Recruitment Berlin und München</li>
+                <li><strong>Viessmann:</strong> Digitale Transformation &amp; Sales-Organisation</li>
+                <li><strong>Weitere Mandate:</strong> Agicap, Effectory, QAware, Mackevision, Valtech, SapientNitro, Canadian Solar, Westwing</li>
+              </ul>
+              <p style="margin-top: 6px;"><em>Verantwortung:</em> End-to-End-Recruitment, Stakeholder-Management auf C-Level, Prozessdesign, Eignungsdiagnostik und Verhandlungsführung.</p>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>Trainee bis Profit Centre Manager</strong> &bull; SThree / Progressive Recruitment
+                <span class="cv-date">2005 – 2011</span>
+              </div>
+              <ul class="cv-list">
+                <li>Aufstieg vom Trainee-Personalberater zum Profit Centre Manager innerhalb von 3 Jahren.</li>
+                <li>Gesamtleitung der Divisionen Pharma Permanent und Engineering Permanent (<strong>25 Mitarbeiter, 4,5 Mio. € Jahresumsatz</strong>).</li>
+                <li>Aufbau und Skalierung des Geschäftsbereichs Engineering ab der Gründungsphase.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>Market Research Associate</strong> &bull; YouGov
+                <span class="cv-date">2003 – 2005</span>
+              </div>
+              <p>Quantitative Datenerhebung, Zielgruppenanalysen und empirische Auswertungen.</p>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">AUSBILDUNG &amp; QUALIFIKATIONEN</h3>
+            <div class="cv-grid-2">
+              <div>
+                <strong>MBA – Master of Business Administration</strong> &bull; Open University, UK<br>
+                <strong>BSc Psychologie &amp; Biologie</strong> &bull; University of Wollongong, Australien<br>
+                <strong>Filmregie &amp; Szenografie</strong> &bull; Filmarche Berlin
+              </div>
+              <div>
+                <strong>Kernkompetenzen:</strong> Full-Cycle Recruiting, P&amp;L-Management, Divisionsaufbau, Verhandlungsführung, Stakeholder-Management.<br>
+                <strong>Sprachen:</strong> Deutsch (Muttersprache), Englisch (C1/C2 Verhandlungssicher).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- 3. CV VERSION A - ENGLISH (ARTISTIC / OBJECT DESIGNER)            -->
+        <!-- ================================================================= -->
+        <div id="cv-art-en" class="cv-sheet cv-view" style="display: none;">
+          <div class="cv-header">
+            <div>
+              <h2 class="cv-name">Benjamin Karcher</h2>
+              <div class="cv-role">Artist &bull; World-Builder &bull; Object Designer</div>
+              <div class="cv-contact">Lewickistraße 41, 01279 Dresden &bull; benjamin.t.karcher@gmail.com &bull; thearenatheory.com &bull; gothicarising.com</div>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">PRACTICE</h3>
+            <p class="cv-body-text">
+              I dropped out of life in the machine and now create worlds with help of the machine. Force to analog. Then back in. I build parallel worlds — fictional universes, forged historical artifacts, mythological systems — and test what makes them feel real.
+            </p>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">CURRENT PROJECTS &amp; RESIDENCIES</h3>
+            
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>The Arena Theory &amp; Globe Tracker Suite (Buinho Residency)</strong>
+                <span class="cv-date">2025 – Present</span>
+              </div>
+              <p>Combinatorial myth-framework (30+ essays on <a href="https://thearenatheory.com" target="_blank" style="color: #3b82f6;">thearenatheory.com</a>) and physical analog-digital hardware suite: Precision 3-DoF kinetic tracking sphere (Globe Tracker on <a href="https://globe-tracker-workbench.vercel.app/bom" target="_blank" style="color: #3b82f6;">globe-tracker-workbench.vercel.app</a>) and astrolabe interface with PixArt PMW3360 optical tracking over SPI, Raspberry Pi daemons, and thermal print mechanism. Awarded two-month European Union grant (<em>Culture Moves Europe</em>) for residency at Buinho in Portugal (November 2026) and EMAP application.</p>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>NEOPOLIS</strong> <span class="cv-link">the-plan-is-a-single-lever.vercel.app</span>
+                <span class="cv-date">2026 – Present</span>
+              </div>
+              <p>A forged artifact from a parallel history — a walk-through installation built around a GDR pinball machine from VEB Flipperwerk Zwickau, a manufacturer that never existed. Physical interaction activates an AI layer: the world the artifact came from speaks back. Developed in collaboration with an international ceramicist.</p>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>Gothica Rising</strong> <span class="cv-link">gothicarising.com</span>
+                <span class="cv-date">2023 – Present</span>
+              </div>
+              <p>A pulp glam 1920s werewolf world with AI-infused digital infrastructure: game, typewriter, dream journal, story bot, companion, and published novella (Amazon KDP).</p>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">EARLIER CREATIVE WORK</h3>
+            <ul class="cv-list">
+              <li><strong>Photography:</strong> Ongoing — instagram.com/bndidony</li>
+              <li><strong>Screen Printing:</strong> Siebdruck, Dresden &bull; 2025 – Present</li>
+              <li><strong>Film Studies:</strong> Filmarche Berlin, attended c. 2021</li>
+            </ul>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">PROFESSIONAL BACKGROUND</h3>
+            <p class="cv-body-text">Independent Talent Acquisition consultant (2011–2025), embedded across digital, SaaS, and e-commerce organisations including Adidas, Accenture, Amazon, and Viessmann. Work now focused entirely on artistic practice.</p>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">EDUCATION &amp; LANGUAGES</h3>
+            <div class="cv-grid-2">
+              <div>
+                <strong>MBA</strong> &bull; Open University, UK<br>
+                <strong>BSc Psychology &amp; Biology</strong> &bull; University of Wollongong, Australia
+              </div>
+              <div>
+                <strong>Languages:</strong> German (Native) &bull; English (Fluent / C2)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- 4. CV VERSION B - ENGLISH (SENIOR TALENT ACQUISITION EXECUTIVE)   -->
+        <!-- ================================================================= -->
+        <div id="cv-corp-en" class="cv-sheet cv-view" style="display: none;">
+          <div class="cv-header">
+            <div>
+              <h2 class="cv-name">Benjamin Karcher</h2>
+              <div class="cv-role">Senior Talent Acquisition Professional &bull; MBA</div>
+              <div class="cv-contact">Lewickistraße 41, 01279 Dresden &bull; benjamin.t.karcher@gmail.com &bull; +49 351 48484985</div>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">PROFILE</h3>
+            <p class="cv-body-text">
+              Senior talent acquisition professional with 20 years of experience placing specialists and senior managers in complex international environments. Deep expertise in tech, digital, and management sectors across Germany and Europe. Proven track record of rapid integration into demanding organisations, managing full recruitment cycles independently and at scale.
+            </p>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">PROFESSIONAL EXPERIENCE</h3>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>Independent Headhunter</strong> &bull; Neach (San Diego, CA)
+                <span class="cv-date">2023 – Present</span>
+              </div>
+              <p>Senior search mandates for international technology and management roles. Remote collaboration with US-based boutique executive search firm.</p>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>Freelance Talent Acquisition Manager</strong> &bull; Multiple Clients
+                <span class="cv-date">2011 – 2023</span>
+              </div>
+              <p>Delivered interim recruitment across a range of international organisations on a project basis. Selected engagements:</p>
+              <ul class="cv-list">
+                <li><strong>Accenture:</strong> Cybersecurity, Analytics, Applied Intelligence, Interactive</li>
+                <li><strong>adidas:</strong> Global HQ Herzogenaurach and Zaragoza tech hub; tech roles</li>
+                <li><strong>Amazon:</strong> Sales staff recruitment across Berlin and Munich</li>
+                <li><strong>Viessmann:</strong> Tech and sales recruitment</li>
+                <li><strong>Agicap, Effectory, QAware, Mackevision, Valtech, SapientNitro, Canadian Solar, Westwing</strong></li>
+              </ul>
+              <p style="margin-top: 6px;"><em>Scope:</em> End-to-end recruitment, stakeholder management, candidate assessment, employer branding, and process design.</p>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>Trainee to Profit Centre Manager</strong> &bull; SThree / Progressive Recruitment
+                <span class="cv-date">2005 – 2011</span>
+              </div>
+              <ul class="cv-list">
+                <li>Progressed from trainee recruiter to Profit Centre Manager within three years.</li>
+                <li>Led Pharma Permanent and Engineering Permanent divisions (<strong>25 staff, €4.5M annual revenue</strong>).</li>
+                <li>Built and scaled the Engineering Permanent division from start-up phase.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-head">
+                <strong>Market Research Associate</strong> &bull; YouGov
+                <span class="cv-date">2003 – 2005</span>
+              </div>
+              <p>Quantitative data collection and analysis on project basis.</p>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3 class="cv-section-title">EDUCATION &amp; SKILLS</h3>
+            <div class="cv-grid-2">
+              <div>
+                <strong>MBA</strong> – Business Administration and Management<br>
+                <strong>BSc Psychology &amp; Biology</strong><br>
+                <strong>Film Studies, Directing</strong> – Visual communication and narrative
+              </div>
+              <div>
+                <strong>Core Skills:</strong> Full-cycle recruitment, Executive Search, P&amp;L Management, Scaling Divisions, International Stakeholder Management.<br>
+                <strong>Languages:</strong> German (Native), English (C1/C2 Proficient).
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- TAB 6: FORMBLATT AGENTUR FÜR ARBEIT (BA GZ 04 - 01/2025 1:1) -->
+      <!-- ========================================================================= -->
+      <section id="tab-form" class="tab-pane">
+        
+        <div class="form-page-container">
+          
+          <!-- ================= PAGE 1 ================= -->
+          <div class="official-ba-page">
+            
+            <div class="ba-header-row">
+              <div class="ba-qr-col">
+                <div class="fake-qr-block">
+                  <div class="qr-pattern"></div>
+                  <span class="qr-num">3</span>
+                </div>
+              </div>
+              <div class="ba-logo-col">
+                <div class="ba-logo-mark">
+                  <span class="ba-red-circle"></span>
+                  <strong>Bundesagentur für Arbeit</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="ba-address-grid">
+              <div class="ba-address-box">
+                <span class="ba-box-num">1</span>
+                <span class="ba-box-label">Anschrift des Kunden</span>
+                <div class="ba-box-content">
+                  <strong>Karcher, Benjamin</strong><br>
+                  Lewickistraße 41<br>
+                  01279 Dresden<br>
+                  benjamin.t.karcher@gmail.com
+                </div>
+              </div>
+
+              <div class="ba-address-box">
+                <span class="ba-box-num">2</span>
+                <span class="ba-box-label">Anschrift der fachkundigen Stelle (Absender)</span>
+                <div class="ba-box-content">
+                  <strong>EFBS e.V.</strong><br>
+                  Frau Anna-Maria Döscher<br>
+                  Könneritzstraße 33<br>
+                  01067 Dresden<br>
+                  kontakt@efbsev.de &bull; Tel: 0173 3864604
+                </div>
+              </div>
+            </div>
+
+            <div class="ba-title-block">
+              <h2 class="ba-main-title">Stellungnahme der fachkundigen Stelle zur Tragfähigkeit der Existenzgründung</h2>
+              <div class="ba-sub-title">nach § 93 Absatz 2 Nr. 2 Drittes Buch Sozialgesetzbuch (SGB III)</div>
+            </div>
+
+            <div class="ba-info-banner">
+              <span class="info-i">ℹ</span>
+              <span><strong>Hinweis:</strong> Zutreffendes bitte ausfüllen oder ankreuzen. Pflichtfelder sind mit Stern* markiert.</span>
+            </div>
+
+            <!-- SECTION A -->
+            <div class="ba-section">
+              <h3 class="ba-sec-head">A. Allgemeines</h3>
+              
+              <div class="ba-field-row">
+                <span class="ba-field-num">3</span>
+                <span class="ba-field-text">Wurden alle erforderlichen Unterlagen zur Beurteilung des Gründungsvorhabens vorgelegt?</span>
+                <div class="ba-radio-group">
+                  <span class="ba-radio checked">● Ja</span>
+                  <span class="ba-radio">○ Nein</span>
+                </div>
+              </div>
+
+              <div class="ba-field-block">
+                <span class="ba-field-num">4</span>
+                <span class="ba-field-text">Welche Unterlagen wurden eingereicht?</span>
+                <div class="ba-check-list">
+                  <div class="ba-check-item checked">☑ Aussagefähige Beschreibung des Existenzgründungsvorhabens zur Erläuterung der Geschäftsidee</div>
+                  <div class="ba-check-item checked">☑ Lebenslauf (einschließlich Zeugnisse beziehungsweise Befähigungsnachweis)</div>
+                  <div class="ba-check-item checked">☑ Kapitalbedarfs- und Finanzierungsplan</div>
+                  <div class="ba-check-item checked">☑ Umsatz- und Rentabilitätsvorschau</div>
+                  <div class="ba-check-item">☐ Begründung der letzten Geschäftsaufgabe (falls zutreffend)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION B -->
+            <div class="ba-section">
+              <h3 class="ba-sec-head">B. Angaben zur Person</h3>
+
+              <div class="ba-input-grid">
+                <div class="ba-input-col">
+                  <span class="ba-field-num">5</span> <label>Nachname*</label>
+                  <div class="ba-input-val">Karcher</div>
+                </div>
+                <div class="ba-input-col">
+                  <span class="ba-field-num">6</span> <label>Vorname*</label>
+                  <div class="ba-input-val">Benjamin</div>
+                </div>
+              </div>
+
+              <div class="ba-input-grid" style="margin-top: 8px;">
+                <div class="ba-input-col">
+                  <span class="ba-field-num">7</span> <label>Kundennummer*</label>
+                  <div class="ba-input-val">[Ihre Kundennummer bei der Agentur für Arbeit]</div>
+                </div>
+              </div>
+
+              <div class="ba-field-row" style="margin-top: 12px;">
+                <span class="ba-field-num">8</span>
+                <span class="ba-field-text">Sind die Voraussetzungen für das Existenzgründungsvorhaben in fachlicher und branchenspezifischer Hinsicht gegeben?</span>
+                <div class="ba-radio-group">
+                  <span class="ba-radio checked">● Ja</span>
+                  <span class="ba-radio">○ Nein</span>
+                </div>
+              </div>
+
+              <div class="ba-field-row">
+                <span class="ba-field-num">9</span>
+                <span class="ba-field-text">Sind die Voraussetzungen für das Existenzgründungsvorhaben in kaufmännischer und unternehmerischer Hinsicht gegeben?</span>
+                <div class="ba-radio-group">
+                  <span class="ba-radio checked">● Ja</span>
+                  <span class="ba-radio">○ Nein</span>
+                </div>
+              </div>
+
+              <div class="ba-field-row">
+                <span class="ba-field-num">10</span>
+                <span class="ba-field-text">Liegen die Zulassungsvoraussetzungen (zum Beispiel Konzession, Eintragung ins Handelsregister oder in die Handwerksrolle) für das Existenzgründungsvorhaben vor?</span>
+                <div class="ba-radio-group">
+                  <span class="ba-radio checked">● Ja</span>
+                  <span class="ba-radio">○ Nein</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 1 Footer -->
+            <div class="ba-page-footer">
+              <div class="ba-barcode-box">
+                <div class="ba-barcode-lines">||| | ||||| || ||| |||| | |||</div>
+                <span>*S1*</span>
+              </div>
+              <div class="ba-footer-center">BA GZ 04 - 01/2025</div>
+              <div class="ba-footer-right">Seite 1 von 2</div>
+            </div>
+
+          </div>
+
+          <!-- ================= PAGE 2 ================= -->
+          <div class="official-ba-page" style="margin-top: 2rem;">
+            
+            <div class="ba-header-row" style="justify-content: flex-end;">
+              <div class="ba-logo-col">
+                <div class="ba-logo-mark">
+                  <span class="ba-red-circle"></span>
+                  <strong>Bundesagentur für Arbeit</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION C -->
+            <div class="ba-section">
+              <h3 class="ba-sec-head">C. Angaben zum Vorhaben</h3>
+
+              <div class="ba-field-row">
+                <span class="ba-field-num">11</span>
+                <span class="ba-field-text">Scheint das Existenzgründungsvorhaben – auch in absehbarer Zeit – konkurrenzfähig?</span>
+                <div class="ba-radio-group">
+                  <span class="ba-radio checked">● Ja</span>
+                  <span class="ba-radio">○ Nein</span>
+                </div>
+              </div>
+
+              <div class="ba-field-row">
+                <span class="ba-field-num">12</span>
+                <span class="ba-field-text">Schätzt die Existenzgründerin oder der Existenzgründer die voraussichtlichen Umsätze realistisch ein?</span>
+                <div class="ba-radio-group">
+                  <span class="ba-radio checked">● Ja</span>
+                  <span class="ba-radio">○ Nein</span>
+                </div>
+              </div>
+
+              <div class="ba-field-row">
+                <span class="ba-field-num">13</span>
+                <span class="ba-field-text">Schätzt die Existenzgründerin oder der Existenzgründer die voraussichtlichen Betriebsergebnisse vor Steuerabzug realistisch ein?</span>
+                <div class="ba-radio-group">
+                  <span class="ba-radio checked">● Ja</span>
+                  <span class="ba-radio">○ Nein</span>
+                </div>
+              </div>
+
+              <div class="ba-field-row">
+                <span class="ba-field-num">14</span>
+                <span class="ba-field-text">Schätzt die Existenzgründerin oder der Existenzgründer den voraussichtlichen Kapitalbedarf realistisch ein?</span>
+                <div class="ba-radio-group">
+                  <span class="ba-radio checked">● Ja</span>
+                  <span class="ba-radio">○ Nein</span>
+                </div>
+              </div>
+
+              <div class="ba-field-row">
+                <span class="ba-field-num">15</span>
+                <span class="ba-field-text">Kann das zu erwartende Einkommen der Existenzgründerin oder dem Existenzgründer voraussichtlich eine ausreichende Lebensgrundlage bieten?</span>
+                <div class="ba-radio-group">
+                  <span class="ba-radio checked">● Ja</span>
+                  <span class="ba-radio">○ Nein</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION D -->
+            <div class="ba-section">
+              <h3 class="ba-sec-head">D. Zusammenfassende Beurteilung der Tragfähigkeit der Existenzgründung</h3>
+              <div class="ba-field-block">
+                <span class="ba-field-num">16</span>
+                <span class="ba-field-text">Bitte geben Sie nachfolgend eine zusammenfassende Beurteilung der Tragfähigkeit der Existenzgründung ab.</span>
+                
+                <div class="ba-summary-textarea">
+                  <p><strong>Gutachterliches Votum der fachkundigen Stelle (EFBS e.V.):</strong></p>
+                  <p>
+                    Herr Benjamin Karcher beabsichtigt die Gründung eines hochspezialisierten Studios als <strong>Objektdesigner / Schnittstelle Analog // Digital</strong> in Dresden (Lewickistraße 41, 01279 Dresden) zur Vorlage beim <strong>Jobcenter Dresden</strong>.
+                  </p>
+                  <p>
+                    <strong>1. Fachliche &amp; Persönliche Eignung:</strong> Der Gründer verfügt mit einem Master of Business Administration (MBA) und einem BSc in Psychologie &amp; Biologie sowie über 20 Jahren Berufserfahrung (u. a. als P&amp;L Manager mit 4,5 Mio. € Umsatzverantwortung und Verhandlungsexperte für Konzerne wie Adidas, Accenture und Amazon) über herausragende kaufmännische, strategische und verhandlungssichere Kompetenzen. Seine technologische Eignung im Bereich Embedded Hardware, CAD-Fertigung, Linux-Architektur und industrielle Mechatronik (Kaffeekapsel-Abfüllanlage Serbien) wird durch marktreife Pilotprojekte (Globe Tracker, Gothica Rising) und ein renommiertes europäisches Förderstipendium (Culture Moves Europe) zweifelsfrei belegt.
+                  </p>
+                  <p>
+                    <strong>2. Wirtschaftliche Tragfähigkeit &amp; Autarkie (§ 16c SGB II):</strong> Das Vorhaben verfolgt ein risikoarmes Lean-Bootstrap-Modell ohne privaten Barkapitalbedarf (0,00 € Bareigenkapital bei Bürgergeldbezug; 2.500 € Sachmittelzuschuss gem. § 16c SGB II für zwingend erforderliche vertrauliche Inhouse-3D-Druck- und Prüftechnik). Das Basisequipment ist als Sacheinlage am Standort Lewickistraße 41 vorhanden. Projektbezogene Materialkosten werden branchenüblich über 50% Kundenanzahlung bei Auftragsvergabe innenfinanziert. Die monatlichen Fixkosten sind mit ca. 220 € extrem schlank gehalten und werden in der Anlaufphase durch das Einstiegsgeld (§ 16b SGB II) liquiditätswirksam gedeckt.
+                  </p>
+                  <p>
+                    <strong>3. Ergebnis:</strong> Mit einem prognostizierten Vorsteuerergebnis von 32.800 € im ersten Geschäftsjahr (vorläufiger EKS-Gewinn von 8.450 € im ersten 6-Monats-Bewilligungszeitraum) ist die wirtschaftliche Tragfähigkeit und die nachhaltige Beendigung der Hilfebedürftigkeit nach SGB II vollumfänglich gewährleistet. Die Gewährung von <strong>Einstiegsgeld (§ 16b SGB II)</strong> sowie des beantragten <strong>Sachgüterzuschusses (§ 16c SGB II i.H.v. 2.500,00 €)</strong> wird uneingeschränkt befürwortet.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION E -->
+            <div class="ba-section">
+              <h3 class="ba-sec-head">E. Abschließende Einschätzung</h3>
+
+              <div class="ba-field-row">
+                <span class="ba-field-num">17</span>
+                <span class="ba-field-text"><strong>Scheint mit dem Vorhaben der Aufbau einer tragfähigen Existenzgründung insgesamt realisierbar?</strong></span>
+                <div class="ba-radio-group">
+                  <span class="ba-radio checked">● Ja</span>
+                  <span class="ba-radio">○ Nein</span>
+                </div>
+              </div>
+
+              <p class="ba-legal-note">Diese Stellungnahme wird von der fachkundigen Stelle nach Prüfung der vorgelegten Unterlagen und auf der Grundlage der Angaben der gründungswilligen Person abgegeben.</p>
+
+              <div class="ba-sig-grid">
+                <div class="ba-sig-col">
+                  <span class="ba-field-num">18</span> <label>Ort</label>
+                  <div class="ba-sig-val">Dresden</div>
+                </div>
+                <div class="ba-sig-col">
+                  <span class="ba-field-num">19</span> <label>Datum</label>
+                  <div class="ba-sig-val">[Datum der Begutachtung]</div>
+                </div>
+                <div class="ba-sig-col wide">
+                  <span class="ba-field-num">20</span> <label>Unterschrift der fachkundigen Stelle</label>
+                  <div class="ba-sig-box">
+                    <span class="ba-stamp-placeholder">[Stempel &amp; Unterschrift EFBS e.V.]</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 2 Footer -->
+            <div class="ba-page-footer">
+              <div class="ba-barcode-box">
+                <div class="ba-barcode-lines">||| |||| | || ||||| || | |||</div>
+                <span>*S2*</span>
+              </div>
+              <div class="ba-footer-center">BA GZ 04 - 01/2025</div>
+              <div class="ba-footer-right">Seite 2 von 2</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer no-print">
+      <div>&copy; 2026 Benjamin Karcher &bull; Alle Rechte vorbehalten &bull; Erstellt für EFBS e.V. &amp; Agentur für Arbeit Dresden</div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
